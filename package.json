@@ -1,0 +1,22 @@
+{
+  "name": "ulmart",
+  "version": "1.0.0",
+  "description": "Ulmart",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonEssenetial/ulmart.git"
+  },
+  "keywords": [
+    "ulmart"
+  ],
+  "author": "murat khatypov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntonEssenetial/ulmart/issues"
+  },
+  "homepage": "https://github.com/AntonEssenetial/ulmart#readme"
+}
