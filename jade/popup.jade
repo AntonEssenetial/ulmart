@@ -1,0 +1,30 @@
+//-jade popup.jade
+<!-- Popup -->
+.b-popup.b-popup-hello.mfp-hide#popupHello
+  .b-popup-hello__wrapper.b-ib-wrapper
+    .b-popup-hello__left.b-ib
+      .b-popup-hello__items.b-ib-wrapper
+        .b-popup-hello__item.b-ib
+          img(src="images/hello-1.png")
+          span Магазин<br> или ресторан
+        .b-popup-hello__item.b-ib
+          img(src="images/hello-2.png")
+          span Наши<br> курьеры
+        .b-popup-hello__item.b-ib
+          img(src="images/hello-3.png")
+          span Заказ у<br> вас дома
+      ul.b-popup-hello__list
+        li Колбаски Рублевский МК Аджарские с травами для жарки, 0,3-0,5кг
+        li Соус Кинто Сацебели домашний 300г
+        li Цыпленок Фермерский урожай Тапака 0,4-0,7кг охлажденный
+    .b-popup-hello__right.b-ib
+      .b-popup-hello__title
+        | Узнайте, работаем ли<br>
+        | мы в вашем городе
+      form(action="").b-popup-hello-form
+        .b-popup-hello-form__title Введите ваш адрес или индекс
+        .b-popup-hello-form__item 
+          input.b-form-control(type="text" placeholder="Например, г. Москва, ул. Пушкина, 13" value="")
+          button(type="submit").b-button.b-button_green Найти
+        .b-popup-hello-form__note Пропустить ввод и 
+          a(href="#").js-close-popup посмотреть сервис по пробному индексу

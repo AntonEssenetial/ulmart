@@ -1,0 +1,16 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-catalog
+          .b-catalog__sidebar.b-ib
+            .b-sidebar__delivery
+            .b-sidebar__catalog
+            .b-sidebar__filter
+          .b-catalog__content.b-ib
+        include footer.jade
+    //- include popup.jade
+    include scripts.jade

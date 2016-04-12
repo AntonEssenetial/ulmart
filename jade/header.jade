@@ -1,0 +1,131 @@
+//-jade header.jade
+<!-- Header -->
+header.b-header
+  .b-header__top.b-ib-wrapper
+    .b-header__logo.b-ib
+      a(href="")
+        img(src="images/logo.png" alt="")
+    .b-header-search.b-ib
+      form
+        .b-header-search__left.b-ib Поиск
+        .b-header-search__center.b-ib
+          input.b-header-search__input(type="text" placeholder="Например, говядина для шашлыка, 3 кг" value="")
+        .b-header-search__right.b-ib
+          button.b-button.b-button_green Найти
+    .b-header-user.b-ib
+      .b-header-user__avatar.b-ib
+        a(href="")
+         img(src="images/demo/header-avatar.jpg")
+      .b-header-user__name.b-ib
+        | Здравствуйте, 
+        a.b-header-user__name-link(href="") Сергей
+      .b-header-user__exit.b-ib
+        a.b-header-user__exit-btn(href="")
+  .b-header-main.b-ib-wrapper
+    .b-header-main__left.b-ib
+      nav.b-nav.b-ib
+        .b-nav__item.b-nav__item_subitems.b-ib
+          a.b-nav__link(href="catalog.html") Каталог товаров
+          .b-header-popup b-ib-wrapper
+            .b-header-popup__wrapper
+              .b-header-popup__left.b-ib
+                .b-custom-scroll.js-custom-scroll
+                  .b-header-popup__title Рестораны
+                  .b-header-popup-menu
+                    li.b-header-popup-menu__item
+                      a(href="") Пицца
+                    li.b-header-popup-menu__item
+                      a(href="") Суши
+                    li.b-header-popup-menu__item
+                      a(href="") Бургеры
+                    li.b-header-popup-menu__item
+                      a(href="") Шашлыки
+                    li.b-header-popup-menu__item
+                      a(href="") Пироги
+                    li.b-header-popup-menu__item
+                      a(href="") Китайская еда
+                    li.b-header-popup-menu__item
+                      a(href="") Итальянская / Европейская
+                    li.b-header-popup-menu__item
+                      a(href="") Японская / Китайская
+                    li.b-header-popup-menu__item
+                      a(href="") Суши
+                    li.b-header-popup-menu__item
+                      a(href="") Пицца
+                    li.b-header-popup-menu__item
+                      a(href="") Суши
+                    li.b-header-popup-menu__item
+                      a(href="") Бургеры
+                    li.b-header-popup-menu__item
+                      a(href="") Шашлыки
+              .b-header-popup__right.b-ib
+                .b-custom-scroll.js-custom-scroll
+                  .b-header-popup__top.b-ib-wrapper
+                    .b-header-popup__top-left.b-ib
+                      .b-header-popup__filter.b-ib-wrapper
+                        .b-header-popup__filter-left.b-ib Сумма заказа
+                        .b-header-popup__filter-select.b-ib
+                          select.b-custom-select.js-custom-select
+                            option(selected="selected" value="5000") до 5000 руб.
+                            option(value="10000") до 10000 руб.
+                            option(value="15000") до 15000 руб.
+                    .b-header-popup__top-right.b-ib
+                      .b-header-search.b-ib
+                        form
+                          .b-header-search__left.b-ib Поиск
+                          .b-header-search__center.b-ib
+                            input.b-header-search__input(type="text" placeholder="Введите название ресторана" value="")
+                          .b-header-search__right.b-ib
+                            button.b-button.b-button_green.b-button_dark_green Найти
+                  .b-header-popup__shops
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_karusel.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_auchan.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_magnit.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_karusel.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_auchan.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_magnit.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_karusel.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_auchan.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_magnit.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_karusel.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_auchan.jpg" alt="")
+                    .b-header-popup__shop.b-ib
+                      a(href="")
+                        img(src="images/demo/main-sections_magnit.jpg" alt="")
+        .b-nav__item.b-nav__item_subitems.b-ib
+          a.b-nav__link(href="shops.html") Магазины
+        .b-nav__item.b-nav__item_subitems.b-ib
+          a.b-nav__link(href="rest.html") Рестораны
+        .b-nav__item.b-nav__item_subitems.b-ib
+          a.b-nav__link(href="rec.html") Рецепты
+    .b-header-main__right.b-ib
+      .b-header-location.b-ib
+        .b-header-location__current.b-ib
+          | Москва 10069
+        button.b-button.b-header-location__change
+          | Сменить адрес
+      .b-header-cart.b-ib
+        | В корзине 
+        a(href="") 6 товаров, 1 560 руб

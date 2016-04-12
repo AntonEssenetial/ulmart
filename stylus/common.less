@@ -1,0 +1,197 @@
+@import "vars";
+
+////////////////////////////////////////// BUTTON
+.b-button {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background: none;
+    outline: none;
+}
+
+.b-button_green {
+    height: 33px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 33px;
+    border-radius: 30px;
+    background: #34c263;
+    padding: 0 18px;
+    background: -moz-linear-gradient(top,  #34c263 0%, #71c54a 100%);
+    background: -webkit-linear-gradient(top,  #34c263 0%,#71c54a 100%);
+    background: linear-gradient(to bottom,  #34c263 0%,#71c54a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34c263', endColorstr='#71c54a',GradientType=0 );
+    transition: background .2s ease-out;
+    &:hover {
+        background: #32b95c;
+        background: -moz-linear-gradient(top,  #32b95c 0%, #66b83f 100%);
+        background: -webkit-linear-gradient(top,  #32b95c 0%,#66b83f 100%);
+        background: linear-gradient(to bottom,  #32b95c 0%,#66b83f 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32b95c', endColorstr='#66b83f',GradientType=0 );
+    }
+}
+
+.b-button_dark_green {
+    background: #889800;
+    transition: .25s ease-out;
+    &:hover {
+        background: #758300;
+    }
+}
+
+.b-button_show {
+    position: relative;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 30px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: .25s ease-out;
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 17px;
+        height: 17px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        margin-top: -3px;
+        margin-right: 5px;
+        transition: .25s ease-out;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        bottom: 0;
+        width: 5px;
+        height: 9px;
+        left: 18px;
+        margin: auto 0;
+        background: @sprite -17px -15px no-repeat;
+        background-size: @spriteSize;
+        transition: .25s ease-out;
+    }
+    &:hover {
+        background-color: rgba(255,255,255,.25);
+        &:before,
+        &:after {
+            transform: translateX(2px);
+        }
+    }
+}
+
+.b-button_plus {
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    right: 18px;
+    font-size: 22px;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    color: black;
+    line-height: 14px;
+}
+
+.b-button_minus {
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    right: 18px;
+    font-size: 22px;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    color: black;
+    line-height: 14px;
+}
+
+
+
+
+////////////////////////////////////////// LAYOUT
+.b-ib-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    font-size: 0;
+}
+
+.b-ib {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+////////////////////////////////////////// ICONS
+.b-icon_hot {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,.2);
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 11px;
+        height: 17px;
+        opacity: .6;
+        background: @sprite -80px 0 no-repeat;
+        background-size: @spriteSize;
+    }
+}
+
+
+////////////////////////////////////////// TABS
+.b-tabs-content {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+
+////////////////////////////////////////// TITLE
+.b-title_h4 {
+    font-size: 18px;
+}
+
+
+input[type="text"].b-form-control {
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    padding: 8px 10px;
+    width: 100%;
+}
+
+
+
+.b-custom-select {
+    .selectize-input {
+        box-shadow: none;
+        border: 0;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+

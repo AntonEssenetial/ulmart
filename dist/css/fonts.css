@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&text=%E2%82%B6);
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Light';
+    src: url('../libs/fonts/HelveticaNeueLight/HelveticaNeueCyr-Light_gdi.eot');
+    src: url('../libs/fonts/HelveticaNeueLight/HelveticaNeueCyr-Light_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../libs/fonts/HelveticaNeueLight/HelveticaNeueCyr-Light_gdi.woff') format('woff'),
+    url('../libs/fonts/HelveticaNeueLight/HelveticaNeueCyr-Light_gdi.ttf') format('truetype'),
+    url('../libs/fonts/HelveticaNeueLight/HelveticaNeueCyr-Light_gdi.svg#HelveticaNeueCyr-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Thin';
+    src: url('../libs/fonts/HelveticaNeueThin/HelveticaNeueCyr-Thin_gdi.eot');
+    src: url('../libs/fonts/HelveticaNeueThin/HelveticaNeueCyr-Thin_gdi.eot?#iefix') format('embedded-opentype'),
+    url('../libs/fonts/HelveticaNeueThin/HelveticaNeueCyr-Thin_gdi.woff') format('woff'),
+    url('../libs/fonts/HelveticaNeueThin/HelveticaNeueCyr-Thin_gdi.ttf') format('truetype'),
+    url('../libs/fonts/HelveticaNeueThin/HelveticaNeueCyr-Thin_gdi.svg#HelveticaNeueCyr-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+}
