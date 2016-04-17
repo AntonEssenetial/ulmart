@@ -1,0 +1,19 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-error
+          b-error__text
+            p Неправильно набран адрес, или такой страницы больше не существует. <br>
+              | Вернитесь 
+              a(href="").error__link на главную 
+              | или 
+              a(href="").error__link воспользуйтесь картой сайта.
+            img(src="images/404.jpg", alt="")
+            span.error__span ошибка
+        include footer.jade
+    include popup.jade
+    include scripts.jade

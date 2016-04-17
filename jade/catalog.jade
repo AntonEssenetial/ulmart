@@ -5,12 +5,417 @@ html(lang='ru')
     #b-layout
       .b-wrapper
         include header.jade
-        .b-catalog
-          .b-catalog__sidebar.b-ib
+        .b-catalog.b-ib-wrapper
+          .b-catalog__left.b-ib-wrapper
             .b-sidebar__delivery
+              .b-delivery__content
+                .b-img-wrapper
+                  img(src="images/demo/main-sections_auchan.jpg", alt="")
+              .b-delivery__close Ближайшая доставка: 
+                span 15:00-17:00
+              .b-delivery__interval
+                a(href="").b-button.b-button_delivery Все интервалы
+                a(href="").b-button.b-button_delivery Дополнительно
             .b-sidebar__catalog
+              .b-sidebar__catalog__head
+                .b-ctalog__title.b-ib Каталог товаров
+                .b-main-sections__more.b-main-sections__more_sidebar.b-ib
+                  button.b-button.js-toggle-class(data-toggle-element="#section-1" data-toggle-class="open")
             .b-sidebar__filter
-          .b-catalog__content.b-ib
+              .b-sidebar__filter__head.b-wave
+                .filter__head__left.b-ib Фильтр
+                .filter__head__right.b-ib
+                  button(type='button'  onclick='resetAll()').b-button.reset__filetr.js_resetFilter сбросить
+              .b-sidebar__filter__content.b-wave
+                .filter__head__left.b-ib 
+                  span.filter__head__par Объем, л
+                .filter__head__right.b-ib
+                  button(type='button'  onclick='resetSlider()').b-button.reset__filetr сбросить
+                .filter__content
+                  .filter__values
+                    span.slider__values.first__value 1
+                    input(type="text")#amount.fluide__value.slider__values
+                  #slider-range
+                  .filter__values
+                    span.slider__values 1
+                    span.slider__values.second__value 50
+                    span.slider__values.third__value 100
+              #js_filter1.b-sidebar__filter__content.b-wave
+                .filter__head__left.b-ib 
+                  span.filter__head__par Бренды
+                .filter__head__right.b-ib
+                  button(type='button').b-button.reset__filetr.js_resetFilter сбросить
+                .filter__content
+                  .b-custom-scroll.js-custom-scroll
+                    form(action="")
+                      label().filter__label
+                        input.filter__checkbox(type="checkbox")
+                        i
+                        | Lacticia
+                      label().filter__label
+                        input.filter__checkbox(type="checkbox")
+                        i
+                        | Натурально и вкусно
+                      label().filter__label
+                        input.filter__checkbox(type="checkbox")
+                        i
+                        | Полезные продукты
+                      label().filter__label
+                        input.filter__checkbox(type="checkbox")
+                        i
+                        | Lacticia
+                      label().filter__label
+                        input.filter__checkbox(type="checkbox")
+                        i
+                        | Lacticia
+                      label().filter__label
+                        input.filter__checkbox(type="checkbox")
+                        i
+                        | Lacticia
+                      label().filter__label
+                        input.filter__checkbox(type="checkbox")
+                        i
+                        | Lacticia
+                      label().filter__label
+                        input.filter__checkbox(type="checkbox")
+                        i
+                        | Lacticia
+                .filter__result__products.b-ib-wrapper
+                  .relult__products.b-ib Выбрано
+                    span.products__cont 12
+                    | продуктов
+                  .relult__products__submit.b-ib
+                    button(type="submit").b-button.b-button_green Показать
+              .b-sidebar__filter__content.b-wave
+                .filter__head__left.b-ib 
+                  span.filter__head__par Сырье
+                .filter__head__right.b-ib
+                  button(type='button').b-button.reset__filetr.js_resetFilter сбросить
+                .filter__content
+                  form(action="")
+                    label().filter__label
+                      input.filter__checkbox(type="checkbox")
+                      i
+                      | Козье
+                    label().filter__label
+                      input.filter__checkbox(type="checkbox")
+                      i
+                      | Коровье
+              .b-sidebar__filter__content.b-wave
+                .filter__head__left.b-ib 
+                  span.filter__head__par Способ
+                .filter__head__right.b-ib
+                  button(type='button').b-button.reset__filetr.js_resetFilter сбросить
+                span.filter__head__par_bottom тепловой обработнки
+                .filter__content
+                  form(action="")
+                    label().filter__label
+                      input.filter__checkbox(type="checkbox")
+                      i
+                      | Стерилизованное
+                    label().filter__label
+                      input.filter__checkbox(type="checkbox")
+                      i
+                      | Ультростерилизовнанное
+              .b-sidebar__filter__content.b-wave
+                .filter__head__left.b-ib 
+                  span.filter__head__par Страна
+                .filter__head__right.b-ib
+                  button(type='button').b-button.reset__filetr.js_resetFilter сбросить
+                .filter__content
+                  form(action="")
+                    label().filter__label
+                      input.filter__checkbox(type="checkbox")
+                      i
+                      | Россия
+          .b-catalog__right.b-ib-wrapper
+            .b-content__bread
+              ul.b-bread
+                li.bread__list
+                  a.bread__item(href="") Главная
+                li.bread__list
+                  a.bread__item(href="") Продукты
+                li.bread__list
+                  a.bread__item(href="") Вост кухня
+                li.bread__list Кабачки
+            .b-catalog__content.b-ib
+              .b-content__block.b-ib-wrapper
+                .b-products-block-top.b-ib-wrapper.b-products-block-top__reverse
+                  .b-ib
+                    .b-products-block-top__title
+                      <span class="b-icon_hot"></span>
+                      | Молоко, сливки, молочные коктейли
+              .b-filter__result
+                .b-header-popup__top-left.b-header-popup_catalog-left.b-ib
+                  .b-catalog__filter-left.b-ib Упорядочить
+                  .b-header-popup__filter.b-header-popup__filter_catalog.b-ib
+                    .b-header-popup__filter-select.b-header-popup__filter-select_catalog.b-ib
+                      select.b-custom-select.js-custom-select
+                        option(selected="selected" value="Стандартно") Стандартно
+                        option(value="По дате") По дате
+                        option(value="По цене") По цене
+                .b-filter__result-items.b-ib
+                  a(href="").result__item Объем, л: 0,2—0,31
+                    span.del__item
+                  a(href="").result__item Жирность, %: 2,5—3,3 
+                    span.del__item
+                  a(href="").result__item Молоко
+                    span.del__item
+                  a(href="").result__item Козье
+                    span.del__item
+              .b-content__item
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper.b-product-preview_actvie
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
+                .b-products-slider__item.b-products-slider__item_responsive
+                  .b-product-preview.b-product-preview_border.b-ib-wrapper
+                    .b-product__count.b-ib 
+                      span.b-count__in 1 шт. в корзине
+                    .b-product-preview__pic.b-ib
+                      a(href="")
+                        img(src="images/demo/product-preview-1.jpg" alt="")
+                    .b-product-preview__name.b-ib
+                      a(href="")
+                        | Молоко кокосовое
+                        | Suzi-Wan 200мл
+                    .b-product-preview__price.b-ib
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib
+                      form(action="")
+                        .b-product-preview__count.b-ib
+                          input(type="text" value='1').b-product-preview__input
+                          button.b-button.b-button_plus +
+                          button.b-button.b-button_minus –
+                        .b-product-preview__incart.b-ib
+                          button(type="submit").b-button.b-button_green В корзину
         include footer.jade
     //- include popup.jade
     include scripts.jade

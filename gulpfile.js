@@ -11,7 +11,7 @@ gulp.task('sprite', function() {
   var spriteData = 
     gulp.src('assets/images/sprite/*.png') 
       .pipe(spritesmith({
-          imgName: 'sprite.png',
+          imgName: 'sprite2.png',
           cssName: 'sprite.styl',
           cssFormat: 'stylus',
           algorithm: 'binary-tree',
@@ -36,7 +36,7 @@ gulp.task('connect',function(){
 gulp.task('jade',function(){
   gulp.src('jade/*.jade')
     .pipe(jade({
-      pretty: true
+      pretty: false
       }))
     .pipe(gulp.dest('dist'))
     .pipe(connect.reload())
@@ -46,7 +46,7 @@ gulp.task('stylus', function(){
   gulp.src('stylus/*.styl')
     .pipe(stylus({
       use: nib(),
-      compress: false
+      compress: true
       }))
     .pipe(gulp.dest('dist/css'))
     .pipe(connect.reload())

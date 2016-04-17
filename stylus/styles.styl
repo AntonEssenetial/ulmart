@@ -1,5 +1,8 @@
 @import "vars";
 @import 'nib';
+@import 'sprite';
+@import 'mixins';
+@import 'animate.css';
 
 ////////////////////////////////////////// MAIN STYLES
 html, body {height: 100%}
@@ -11,6 +14,9 @@ body {
     font-size: 100%;
     color: black;
     background: #fcebd7 url('../images/bg.jpg') 50% 50% repeat;
+}
+li {
+  list-style none;
 }
 input,
 textarea {
@@ -53,7 +59,7 @@ h6 {font-size: 14px}
     position: relative;
     min-height: 100%;
     width: 100%;
-    max-width: 1320px;
+    max-width: 1345px;
     min-width: 1260px;
     margin: 0 auto;
     box-shadow: 0 5px 68px rgba(0,0,0,.3);
@@ -62,7 +68,7 @@ h6 {font-size: 14px}
 
 .b-wrapper {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1260px;
     margin: 0 auto;
 }
 
@@ -87,7 +93,7 @@ h6 {font-size: 14px}
     line-height: 33px;
     border-radius: 30px;
     background: #34c263;
-    padding: 0 18px;
+    padding: 0 14px;
     background: -moz-linear-gradient(top,  #34c263 0%, #71c54a 100%);
     background: -webkit-linear-gradient(top,  #34c263 0%,#71c54a 100%);
     background: linear-gradient(to bottom,  #34c263 0%,#71c54a 100%);
@@ -137,8 +143,8 @@ h6 {font-size: 14px}
         height: 9px;
         left: 18px;
         margin: auto 0;
-        background: @sprite -17px -15px no-repeat;
-        background-size: @spriteSize;
+        background: sprite1 -17px -15px no-repeat;
+        background-size: spriteSize;
         transition: .25s ease-out;
     }
     &:hover {
@@ -213,8 +219,8 @@ h6 {font-size: 14px}
         width: 11px;
         height: 17px;
         opacity: .6;
-        background: @sprite -80px 0 no-repeat;
-        background-size: @spriteSize;
+        background: sprite1 -80px 0 no-repeat;
+        background-size: spriteSize;
     }
 }
 
@@ -289,8 +295,8 @@ input[type="text"].b-form-control {
         margin: auto 0;
         width: 12px;
         height: 12px;
-        background: @sprite 0 0 no-repeat;
-        background-size: @spriteSize;
+        background: sprite1 0 0 no-repeat;
+        background-size: spriteSize;
     }
 }
 
@@ -354,8 +360,8 @@ input[type="text"].b-form-control {
     display: block;
     width: 11px;
     height: 13px;
-    background: @sprite -14px 0 no-repeat;
-    background-size: @spriteSize;
+    background: sprite1 -14px 0 no-repeat;
+    background-size: spriteSize;
 }
 
 
@@ -384,8 +390,8 @@ input[type="text"].b-form-control {
             right: 6px;
             width: 10px;
             height: 6px;
-            background: @sprite -26px 0 no-repeat;
-            background-size: @spriteSize;
+            background: sprite1 -26px 0 no-repeat;
+            background-size: spriteSize;
             opacity: .15;
             transition: .25s ease-out;
         }
@@ -448,8 +454,8 @@ input[type="text"].b-form-control {
         height: 25px;
         display: inline-block;
         vertical-align: middle;
-        background: @sprite -37px 0 no-repeat;
-        background-size: @spriteSize;
+        background: sprite1 -37px 0 no-repeat;
+        background-size: spriteSize;
     }
 }
 
@@ -463,8 +469,7 @@ input[type="text"].b-form-control {
         height: 25px;
         display: inline-block;
         vertical-align: middle;
-        background: @sprite -59px 0 no-repeat;
-        background-size: @spriteSize;
+        sprite($sprite-cart)
     }
     a {
         text-decoration: underline;
@@ -859,8 +864,8 @@ input[type="text"].b-form-control {
         top: 11px;
         width: 6px;
         height: 10px;
-        background: @sprite -26px -7px no-repeat;
-        background-size: @spriteSize;
+        background: sprite1 -26px -7px no-repeat;
+        background-size: spriteSize;
         transition: .25s ease-out;
     }
 }
@@ -998,8 +1003,8 @@ input[type="text"].b-form-control {
             opacity: .2;
             margin: auto;
             transition: .25s ease-out;
-            background: @sprite 0 -15px no-repeat;
-            background-size: @spriteSize;
+            background: sprite1 0 -15px no-repeat;
+            background-size: spriteSize;
         }
         &:hover {
             border-color: #7d7d7d;
@@ -1188,8 +1193,8 @@ input[type="text"].b-form-control {
             margin: auto;
             width: 15px;
             height: 25px;
-            background: @sprite -92px 0 no-repeat;
-            background-size: @spriteSize;
+            background: sprite1 -92px 0 no-repeat;
+            background-size: spriteSize;
             transition: .25s ease-out;
         }
     }
@@ -1227,7 +1232,8 @@ input[type="text"].b-form-control {
 }
 
 ////////////////////////////////////////// PRODUCTS PREVIEW
-.b-product-preview {
+.b-product-preview{
+    position: relative;
     width: 220px;
     padding: 20px;
     border-radius: 5px;
@@ -1577,7 +1583,11 @@ input[type="text"].b-form-control {
     padding: 10px 0;
     border-right: 1px solid #edece4;
 }
-
+.b-main-sections__item:not(.b-main-sections__item_disabled):hover, .b-main-sections__item.b-main-sections__item_active
+  background: #ffffff;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #fffddd 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #fffddd 100%);
+  border-color: #f1c412;
 .b-popup-hello__item {
     position: relative;
     width: 33.33%;
@@ -1589,8 +1599,8 @@ input[type="text"].b-form-control {
         top: 30px;
         width: 18px;
         height: 17px;
-        background: @sprite -125px 0 no-repeat;
-        background-size: @spriteSize;
+        background: sprite1 -125px 0 no-repeat;
+        background-size: spriteSize;
         opacity: .3;
     }
     &:last-child {
@@ -1701,5 +1711,713 @@ input[type="text"].b-form-control {
     opacity: 0;
 }
 
-
-
+// Stylus Syntax
+.b-catalog 
+  margin 40px 0 0 0
+.b-catalog__content
+  shadow()
+.b-catalog__right
+  width 73%
+.b-catalog__left
+  width 24.6%
+  margin 0 2.3% 0 0
+.b-content__item
+  padding 30px 0 40px 0
+.b-products-block-top__reverse
+  background url('../images/headers/head-1.png')
+  background url('../images/headers/head-1.png') no-repeat right, linear-gradient(to left,  #fac10e 0%,#fbc902 30%,#fcd000 65%,#ffe800 100%);
+  padding 18px 15px
+.b-products-slider__item_responsive
+  width 25%
+.b-product-preview_border
+  width: 99%;
+  margin: 0 0.5%;
+  padding 20px 36px
+  &:hover
+    box-shadow: inset 0 0 0px 3px d-orange
+    .b-count__in 
+      opacity 1
+      trs()
+.b-count__in
+  background d-orange
+  border-radius(20px)
+  display inline-block
+  padding 2px 8px
+  opacity 0
+.b-product__count
+  color black 
+  z-index 1 
+  position absolute
+  font-size 12px
+  width 100%
+  top -7px
+  left 0px
+  text-align center
+.b-product-preview_actvie
+  box-shadow: inset 0 0 0px 3px d-orange
+  .b-count__in 
+    opacity 1
+.bread__list 
+  display inline-block
+  color c-grey
+  font-size 12px
+  &:after 
+    content '/'
+    margin 0 3px
+    display inline-block
+.bread__item 
+  color c-grey
+  font-size 12px
+  text-decoration none
+.b-bread 
+  padding 0px
+  margin-bottom 20px
+.b-catalog__filter-left
+  margin-right 10px
+.b-catalog__filter-left
+.b-catalog__filter-select
+  font-size 14px
+  color c-grey
+.b-header-popup__filter-select_catalog
+  &:before 
+    display none
+  .selectize-input.full
+    background transparent
+  .selectize-input
+    padding-left 0px
+  .selectize-control.single .selectize-input:after
+    right 0px
+.b-header-popup__filter_catalog
+  padding 0 20px 0 20px
+  width 60%
+  .b-header-popup__filter-select
+    width 100%
+.b-header-popup_catalog-left
+  width 250px
+.b-filter__result
+  margin 20px
+.result__item 
+  background linear-gradient(to right,  #fac10e 0%,#fbc902 60%,#fcd000 85%,#ffe800 100%);
+  display inline-block
+  font-size 14px
+  text-decoration none
+  padding 10px 15px
+  border-radius 30px 
+  margin 0 5px 0 0
+.del__item
+  sprite($sprite-close)
+  display inline-block
+  margin 0 5px
+// Sidebar
+.b-sidebar__delivery
+  background url(../images/ashan.jpg) no-repeat center
+  background-size cover
+  width 100%
+  padding 40px 40px 30px 40px
+  border-radius(5px)
+  overflow hidden
+  margin 0 0 20px 0
+  .b-button_delivery:first-child:after
+    sprite($sprite-time)
+.b-delivery__content
+  text-align center
+  margin 22px 0 0 0
+.b-delivery__close
+  font-size 14px
+  color white
+  text-align: center
+  margin 0 0 20px 0
+  span 
+    display block
+    font-size 20px
+    margin 5px 0 0 0
+.b-img-wrapper
+  background white 
+  padding 40px 10px
+  display inline-block
+  margin 0 0 15px 0
+.b-button_delivery
+  border 1px solid c-orange
+  color white
+  width 100%
+  margin-bottom 4px
+  font-size 18px
+  position: relative;
+  padding: 7px 10px;
+  border-radius(30px)
+  font-size: 15px;
+  text-decoration: none;
+  trs()
+  &:hover 
+    background: rgba(255, 255, 255, 0.14);
+  &:visited 
+    color white
+  &:before
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #000;
+    border-radius(50%)
+    margin-top: -3px;
+    margin-right: 9px;
+    trs()
+    border 1px solid c-orange
+  &:after  
+    content ''
+    color c-orange
+    sprite($sprite-arrow)
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: 17px;
+    margin: auto 0;
+  &:hover:before
+  &:hover:after
+    transform: translateX(2px);
+.b-sidebar__catalog__head
+  border-radius(5px)
+  padding 10px 20px
+  font-size 24px 
+  color black
+  margin 0 0 20px 0
+  background linear-gradient(to right,  #fac10e 0%,#fbc902 60%,#fcd000 85%,#ffe800 100%);
+.b-main-sections__more_sidebar
+  padding-top 0px
+  margin 0 0 0 50px
+  .b-button
+    border: 1px solid #AF9200;
+.b-sidebar__filter
+  padding 30px 50px
+  shadow()
+  border-radius(5px)
+.b-wave
+  position relative
+  &:after 
+    margin 10px 0 0 0
+    content ''
+    background: url("../images/footer-wave.png") 50% 50% repeat-x;
+    display block
+    width 100%
+    height 10px
+.filter__head__left
+  font-size 24px
+  width 75%
+.filter__head__right
+  width 25%
+  text-align right
+.reset__filetr
+  font-size 12px
+  color c-green
+  margin 5px 0 0 0
+  display inline-block
+  text-decoration underline
+  &:hover
+    text-decoration none
+  &:visited 
+    color c-green
+.b-sidebar__filter__content
+  margin 10px 0 0 0
+.filter__head__par
+  font-size 18px
+.filter__head__par_bottom 
+  font-size 18px
+.filter__label 
+  font-size 13px
+  display block
+  margin 7px 0
+  cursor pointer
+.filter__content *
+  outline none
+.filter__content
+  margin 20px 0 10px 0
+  .jspDrag
+    background-color: #46ba44
+    border-radius: 5px;
+  .jspTrack
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  .jspVerticalBar
+    width: 8px;
+    background: none;
+  .b-custom-scroll
+    height 145px
+.filter__checkbox
+  margin-right 10px
+input[type="checkbox"]
+  display none
+.filter__label > i
+  display inline-block
+  margin 0 10px 0 0
+  width 16px
+  height @width
+  border solid 1px white
+  border-radius(50%)
+  background #f0efec
+  cursor pointer
+  vertical-align middle
+  position relative
+.filter__label > .filter__checkbox:checked + i
+  background #f0efec
+  trs()
+  &:after 
+    sprite($sprite-checkd)
+    content ''
+    display inline-block
+    position absolute
+    top 3px 
+    left @top
+// Price slider
+.slider__values
+  font-size 13px
+  width 33%
+  display inline-block
+#amount 
+  font-size 13px
+  border none
+  width 33$
+.ui-slider-horizontal .ui-slider-range 
+  top: 0;
+  height: 100%;
+.filter__content
+  margin 5px 0
+#slider-range
+  margin 8px 0
+.ui-slider 
+  height 8px 
+  background #f0efec
+  border none
+  border-radius 4px
+  overflow hidden
+  cursor pointer
+.ui-slider-range
+  background #46ba44
+  border none
+.ui-slider-handle
+  border none
+.third__value
+  text-align right
+.second__value
+.fluide__value
+  text-align center
+.fluide__value
+.first__value
+  color c-grey
+// Filter result
+.relult__products__submit
+  text-align right
+  width 39%
+.relult__products
+  width 61%
+  text-align right
+.filter__result__products
+  display none
+  shadow()
+  border-radius(20px)
+  position absolute
+  background white
+  left 230px
+  z-index 2
+  width 245px
+  top 50%
+.relult__products
+  font-size 12px 
+  color black
+.products__cont
+  margin 0 4px
+.js_resultActive
+  display block
+// Ashan
+.b-product-preview_ashan
+  width 196px
+  &:hover 
+    box-shadow: inset 0 0 0px 3px d-orange
+.b-sidebar__catalog_white
+  bacgkround white 
+  border-radius(4px)
+  shadow()
+  padding 30px 20px 20px 20px
+.catalog__title
+  font-size 18px
+  display inline-block
+  width 100%
+  height 35px
+  line-height @height
+  padding 0px 0px 0 15px
+  vertical-align middle
+  &:before 
+    display inline-block
+    content ''
+    vertical-align middle
+    margin 0 10px 0 5px
+.catalog__item
+  color black
+  font-size 13px
+  padding 5px 10px 5px 5px
+  position relative
+  top -2px
+  left -13px
+  border-radius(20px)
+  &:before 
+    width 7px 
+    height @width
+    content ''
+    background #E6E4E4
+    display inline-block
+    border-radius(50%)
+    margin 0 5px
+    position relative 
+    top -1px
+  &:hover 
+    color black
+    background c-orange
+.catalog__sub 
+  padding 0px 0px 0 10px
+  .catalog__sub 
+    padding 0 0 0 4px
+.catalog__acordion
+  padding 0px
+  a 
+    text-decoration none
+.catalog__list 
+  list-style none
+  margin 0 0 6px 0
+  display block
+  &:nth-child(4)
+    margin 30px 0 6px 0
+  &:first-child > a:before
+    sprite($sprite-c-0)
+  &:nth-child(2) > a:before
+    sprite($sprite-c-1)
+  &:nth-child(3) > a:before
+    sprite($sprite-c-2)
+  &:nth-child(4) > a:before
+    sprite($sprite-c-3)
+  &:nth-child(5) > a:before
+    sprite($sprite-c-4)
+  &:nth-child(6) > a:before
+    sprite($sprite-c-5)
+  &:nth-child(7) > a:before
+    sprite($sprite-c-6)
+  &:nth-child(8) > a:before
+    sprite($sprite-c-7)
+  &:nth-child(9) > a:before
+    sprite($sprite-c-8)
+  &:nth-child(10) > a:before
+    sprite($sprite-c-9)
+  &:nth-child(11) > a:before
+    sprite($sprite-c-10)
+  &:nth-child(12) > a:before
+    sprite($sprite-c-11)
+  &:nth-child(13) > a:before
+    sprite($sprite-c-12)
+  &:nth-child(14) > a:before
+    sprite($sprite-c-13)
+  &:nth-child(15) > a:before
+    sprite($sprite-c-14)
+  &:nth-child(16) > a:before
+    sprite($sprite-c-15)
+  &:nth-child(17) > a:before
+    sprite($sprite-c-16)
+  &:nth-child(18) > a:before
+    sprite($sprite-c-17)
+  &:nth-child(19) > a:before
+    sprite($sprite-c-18)
+  &:nth-child(20) > a:before
+    sprite($sprite-c-19)
+  &:nth-child(21) > a:before
+    sprite($sprite-c-20)
+  &:nth-child(22) > a:before
+    sprite($sprite-c-21)
+.catalog__title_grey
+  background #f0f0f0
+.catalog__item__sub 
+  color #E6E6E6
+  font-size: 25px;
+  position relative
+  padding: 0 0px 2px 15px;
+.catalog__item__sub_orange 
+  color c-orange
+  .catalog__item
+    &:before
+      background c-orange
+    &:hover:before 
+      background white
+.catalog__item__sub_active
+  color white
+  background c-orange
+.b-grid__left_w
+  width 60.2%
+// Ashan grid
+// .b-grid__left 
+//   width 60%
+// .b-grid__right
+//   width 40%
+.b-grid__left 
+.b-grid__right
+.b-grid__col
+  position relative
+  overflow hidden
+.b-grid__layer
+  position absolute
+  z-index 1
+  top 0px 
+  width 100%
+  height 100%
+  left 0px
+  trs2()
+  opacity 0
+.b-grid__col:hover
+  .b-grid__layer
+    opacity 1
+    trs2()
+  .b-grid__ul
+    opacity 1
+    trs2()
+    margin-left 0px
+.b-grid__menu
+  padding-top 25px
+  padding-left 20px
+  position absolute
+  z-index 2
+  top 0px 
+  left 0px
+.b-grid__title
+  font-size 20px
+  color white
+.b-grid__link 
+  color white
+  text-decoration underline
+  font-size 13px
+  &:before 
+    content ''
+    display inline-block
+    height 8px
+    width @height 
+    border-radius(50%)
+    background rgba(255, 255, 255, 0.44)
+    vertical-align middle
+    margin-right 10px
+  &:visited 
+    color white
+.b-grid__item
+  margin 12px 0
+.b-grid__title__link
+  color white 
+  text-decoration none
+  &:visited 
+    color white
+.b-grid__ul
+  padding 0px
+  opacity 0
+  margin-left -20px
+  trs2()
+.b-grid__menu_left
+  padding-left 40px
+.b-grid__i1:before
+  content ''
+  display inline-block
+  vertical-align middle
+  margin-right 15px
+  sprite($sprite-r-1)
+.b-grid__i2:before
+  content ''
+  display inline-block
+  vertical-align middle
+  margin-right 15px
+  sprite($sprite-r-2)
+.b-grid__i3:before
+  content ''
+  display inline-block
+  vertical-align middle
+  margin-right 15px
+  sprite($sprite-r-3)
+.b-grid__i4
+  font-size 16px
+  &:before
+    content ''
+    display inline-block
+    vertical-align middle
+    margin-right 5px
+    sprite($sprite-r-4)
+.b-grid__i5
+  font-size 16px
+  &:before
+    content ''
+    display inline-block
+    vertical-align middle
+    margin-right 5px
+    sprite($sprite-r-5)
+.b-grid__menu_top
+  padding-top 10px
+  padding-left 10px
+.b-grid__layer_blue
+  background url(../images/sub.png) no-repeat top center
+  background-size: cover;
+.b-grid__layer_orange
+  background url(../images/sub2.png) no-repeat top center
+  background-size: cover;
+.b-grid__layer_green
+  background url(../images/sub3.png) no-repeat top center
+  background-size: cover;
+.b-grid__layer_dark
+  background url(../images/sub5.png) no-repeat top center
+  background-size: cover;
+.b-single-slide
+  width: 365px;
+  background: #FBFBFB
+  padding: 0 18px;
+  .b-products-slider
+    padding: 0px 0 4px 0;
+  .b-product-preview_ashan:hover 
+    box-shadow none
+  .slick-dots 
+    position relative 
+    top -165px
+    padding 0px 
+    text-align center
+.b-product-preview__pic_margin
+  margin 0 0px 30px 0
+.slick-dots
+  button
+    border none
+    background transparent
+  li 
+    display inline-block
+    margin 0 6px
+    width 8px
+    height @width 
+    background #E0E0DF
+    border-radius(50%)
+  .slick-active
+    background c-green
+.b-product-discount
+  color black
+  font-size 20px
+  border-radius(50%)
+  height 60px
+  width @height
+  line-height @height
+  text-align center
+  background linear-gradient(to right,  #fac10e 0%,#fbc902 60%,#fcd000 85%,#ffe800 100%);  
+  position absolute
+  right 0px
+.mini__slide 
+  width 67%
+  .b-products-slider__slider
+    padding 0 0
+  .b-product-preview__pic_margin
+    margin: 0 0px 13px 0
+  .slick-dots
+    margin 10px 0 0 0
+    padding 0
+    text-align center
+  .b-products-slider
+    padding: 25px 0 10px 0
+.view__all
+  width 33%
+  background linear-gradient(to top,  #f5ae00 0%,#fbc902 60%,#fcd000 85%,#ffe800 100%);  
+  .b-products-block-top__right
+    width 100%
+    text-align left
+.b-grid__title__head
+  color black
+  width 130px 
+  line-height 25px
+  margin 0 0 30px 0
+.b-grid__menu_bottom
+  padding 50px 0px 20px 20px
+.b-grid-slide__title
+  color black
+  font-size 20px
+  margin 21px 0 10px 0
+.b-mini__preview
+  width 120px
+  text-align center 
+  position relative
+  position relative 
+  padding 0 17px
+.mini-preview__pic img 
+  max-width 100%
+  width 100%
+  height auto
+.b-id-wrapper_shadow
+  shadow()
+.discounts
+  position absolute
+  right 0px 
+  width 45%
+  color white
+  font-size 16px
+  margin 50px 0 0 0px
+  .b-button_delivery
+    width auto
+    margin 15px 0 0 0
+.b-button_single
+  padding-right 30px
+.b-products__align-right
+  width 100%
+  text-align left
+.discount__text
+  font-size 16px
+  display block
+  margin 5px 0
+.discount__per
+  font-size 40px
+  display block
+  margin 10px 0 0 0
+.menu__item
+  position relative
+  &:hover .menu__link
+    background c-orange
+  &:hover .menu__sub
+    display block
+    trs()
+  &:after 
+    content ''
+    sprite($sprite-arrow-right)
+    display inline-block
+    position absolute
+    right 35px
+    top 9px
+  &:hover:after
+    sprite($sprite-arrow-right-hover)
+.menu__link
+.sub__menu__link
+  color black 
+  font-size 13px
+  text-decoration none
+  padding 3px 15px 3px 15px
+  margin 3px 0
+  display inline-block
+  border-radius(20px)
+  &:visited 
+    color black
+  &:hover 
+    background c-orange
+.b-header-popup__wrapper_reset
+  padding 0px
+  height auto
+  width 247px
+.ulmart__menu
+  position relative
+  padding 20px 0px 20px 20px
+.b-menu__left
+  width 256px
+.menu__sub 
+  box-shadow: -10px 0 27px 0px rgba(0, 0, 0, 0.11);
+  position fixed
+  top: 24px;
+  width: 562px;
+  left: 247px;
+  height: 553px
+  padding 20px 10px 10px 20px
+  display none
+.bg__class
+  background url(../images/menu.jpg) white no-repeat bottom right
+  background-origin: content-box;
+.b-header-popup_menu
+  width: 247px;
+.row__img 
+  max-width 100%
