@@ -18,7 +18,18 @@ header.b-header
          img(src="images/demo/header-avatar.jpg")
       .b-header-user__name.b-ib
         | Здравствуйте, 
-        a.b-header-user__name-link(href="") Сергей
+        .cabinet__acc.b-ib
+          a.b-header-user__name-link(href="") Сергей
+          .cabinet__wrap
+            ul.profile__menu
+              li
+                a.profile__link(href="") Профиль
+              li
+                a.profile__link(href="") Подписка
+              li
+                a.profile__link(href="") Исстория заказов
+              li
+                a.profile__link(href="") Выход
       .b-header-user__exit.b-ib
         a.b-header-user__exit-btn(href="")
   .b-header-main.b-ib-wrapper
