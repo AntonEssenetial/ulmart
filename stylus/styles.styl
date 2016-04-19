@@ -59,7 +59,7 @@ h6 {font-size: 14px}
     position: relative;
     min-height: 100%;
     width: 100%;
-    max-width: 1345px;
+    max-width: 1346px;
     min-width: 1260px;
     margin: 0 auto;
     box-shadow: 0 5px 68px rgba(0,0,0,.3);
@@ -2195,6 +2195,24 @@ input[type="checkbox"]
       sprite($sprite-c-39)
     &:nth-child(3) > a:before
       sprite($sprite-c-29)
+.b-catalog__favorite_rec
+  .catalog__list
+    &:nth-child(1) > a:before
+      sprite($sprite-c-22)
+    &:nth-child(2) > a:before
+      sprite($sprite-c-23)
+    &:nth-child(3) > a:before
+      sprite($sprite-c-24)
+    &:nth-child(4) 
+      margin 0 0 6px 0
+      > a:before
+        sprite($sprite-c-25)
+    &:nth-child(5) > a:before
+      sprite($sprite-c-26)
+    &:nth-child(6) > a:before
+      sprite($sprite-c-27)
+    &:nth-child(7) > a:before
+      sprite($sprite-c-28)
 .b-catalog__all
   margin-bottom 30px
   .b-all__item
@@ -2868,20 +2886,20 @@ input[type="checkbox"]
   width 100%
   max-width 100%
   trs()
+.b-rec-wrap-link:hover img 
+  transform scale(1.1)
+  trs()
 .b-grid__50 
   width 50%
-.b-grid__col:hover 
-  img 
-    transform scale(1.1)
-    trs()
 .b-rec__descr-title
   color c-orange 
   font-size 20px
 .b-rec__desrc-wrap
   position absolute
-  top 0px
+  bottom 0px
   left 0px
   z-index 1
+  padding 30px 30px 20px 30px
 .b-grid__col
   position relative
 .b-rec__desrc-wrap
@@ -2893,3 +2911,335 @@ input[type="checkbox"]
 .prep__time
   font-size 11px
   color white
+  padding 0px
+  li 
+    line-height 23px
+    &:first-child:after
+      content ''
+      sprite($sprite-time2)
+      display inline-block
+      vertical-align middle
+      margin-left 15px
+.b-rec__main-wrap
+  position absolute
+  right 0px 
+  width 37%
+  z-index 1
+  padding 60px 60px 0 50px
+.prep__main
+  &:before 
+    content ''
+    display inline-block
+    sprite($sprite-time1)
+    vertical-align middle
+    margin-right 15px
+  li 
+    font-size 11px
+    line-height 23px
+    color white
+  ul 
+    padding 0px
+.rec__descr-text
+  font-size 14px
+  color white
+  line-height 22px
+.b-rec-wrap-link__top
+  &:before 
+    content ''
+    display block
+    position absolute
+    top 0px 
+    left 0 
+    background url(../images/rec0.png) no-repeat center
+    width 158px
+    height @width
+    z-index 11
+.page__nav-wrap 
+  padding 30px 0 20px 0
+  text-align center
+  width 100%
+.page__nav
+  a 
+    color black 
+    width 40px
+    height @width 
+    line-height @width
+    border-radius(50%)
+    font-size 14px
+    color black
+    display block
+    text-align center
+    text-decoration none
+    margin 0 7px
+    &:hover 
+      background c-orange
+  li 
+    display inline-block
+    &:last-child a
+      background transparent
+.nav__active
+  a 
+    background c-orange
+// Blog 
+.b-blog-wrap
+  margin 31px 0 0 0
+.b-blog
+  border-top 1px solid #e5e5e5
+  padding 45px 0 0 0
+.b-blog__img
+  overflow hidden
+  img 
+    trs()
+.b-blog__iem-wrap
+  width 23%
+  border-radius(5px)
+  overflow hidden
+  margin 0 2.6% 30px 0
+  shadow()
+  &:nth-child(4n)
+    margin-right 0px
+  &:hover 
+    trs()
+    box-shadow 0 0 15px rgba(0,0,0, 0.3)
+    .b-blog__img img 
+      trs()
+      transform scale(1.1)
+.link__wrap__h2 
+  text-decoration none
+.b-blog__img img 
+  width 100%
+  max-width 100%
+.col__1
+.col__2
+  width 50%
+.col__2
+  text-align right
+.feed
+  background #D0D0D0;
+  font-size 13px
+  text-align center
+  color black
+  border-radius(4px)
+  width 33px
+  height 25px
+  line-height @height
+  display inline-block
+  position relative 
+  &:after
+    content ''
+    display block
+    position absolute
+    right 40%
+    bottom -8px
+    border-top 8px solid #d0d0d0
+    border-left 0px solid transparent
+    border-right 8px solid transparent
+.active__feed
+  background c-orange
+  &:after 
+    border-top 8px solid c-orange
+    border-left 0px solid transparent
+    border-right 8px solid transparent
+.ic__class
+  font-size 11px
+  color c-grey
+  &:before
+    content '' 
+    display inline-block
+    vertical-align middle
+    margin-right 10px
+.desert
+  &:before
+    sprite($sprite-c-23)
+.desert2
+  &:before
+    sprite($sprite-c-24)
+.desert3   
+  &:before
+    sprite($sprite-c-22)
+.b-blog__descr
+  padding 0 25px 20px 25px
+.b-blog__title h2 
+  font-size 18px
+.b-blog__head
+  padding 13px 0
+.b-blog__bq
+  font-size 14px
+  color #d0d0d0 
+.b-blog__cit
+  margin 15px 0 20px 0
+.b-blog__date 
+  padding 15px 0 0 0
+  border-top 1px solid #E8E8E8
+.date__time 
+  color #d0d0d0
+  font-size 13px
+.b-blog__slide
+  margin-bottom 10px
+  margin-left -43px 
+  margin-right -43px
+  img 
+    width 100%
+    max-width 100%
+.b-blog__col__26
+  display inline-block
+  vertical-align top
+  width 26%
+.b-blog__col_88
+  width 88%
+  margin 0px
+.b-blog__col_m12
+  margin-left 12%
+.b-blog__col__48
+  display inline-block
+  vertical-align top
+  width 48%
+.b-blog__col__74
+  width 74%
+.b-blog__article
+  font-size 13px
+  color #ABAAAA
+  text-decoration none
+  display inline-block
+  margin-bottom 10px
+  position relative 
+  top -10px
+  &:visited
+    color #ABAAAA
+.b-blog__h1
+  font-size 48px
+  color black
+.b-blog__col_10
+  width 30%
+  .col__1
+    width 60%
+  .col__2 
+    width 20%
+.next__art
+  margin-left 12%
+.b-blog__main-content
+  margin-top 20px
+.b-blog__art-img
+  width 100%
+  max-width 100%
+.blog__circle 
+  width 80px
+  height @width
+  line-height @height
+  font-size 44px
+  font-family fontHelveticaThin
+  background #eeeeee
+  border-radius(50%)
+  text-align: center
+.blog__p
+  font-size 14px
+  line-height 20px
+  width 82%
+  margin-left 20px
+.b-blog__text
+  margin 10px 0
+textarea 
+  resize none
+.form__input
+.form__textarea
+  width 100%
+  background #f0efec
+  border none 
+  padding 15px 20px
+  border-radius(30px)
+  font-size 18px
+  color grey
+  font-family fontHelveticaThin
+.form__textarea
+  height 150px
+  margin-top 20px
+  border-radius(10px)
+  margin-bottom 20px
+.b-blog__form-title
+  font-size 30px
+  color #0e0e0e
+  margin 25px 0
+  font-family fontHelveticaThin
+.b-blog__comment
+  margin 40px 0 30px 0
+  &:after 
+  &:before
+    margin: 10px 0 0 0;
+    content: '';
+    background: url("../images/footer-wave.png") 50% 50% repeat-x;
+    display: block;
+    width: 100%;
+    height: 10px;
+.autor__name
+  font-size 12px
+  color grey
+.b-blog__name
+  margin 10px 0 10px 0
+  .col__2
+    text-align left
+.comment__text
+  font-size 14px 
+  margin 0px
+  line-height 22px
+  span 
+    font-weight bold
+    font-family fontHelveticaLight
+.b-blag__comment-area
+  margin-bottom 20px
+.b-blog__user-comment
+  border-bottom 1px solid #DEDCDC
+  margin-top 10px
+  &:last-child
+    border none
+.small__rate__link
+  sprite($sprite-small-star)
+  display block
+.small__rate__item
+  display inline-block
+.active__star a
+  sprite($sprite-small-star-active)
+.small__rate__link:hover 
+  sprite($sprite-small-star-active) 
+.favourite__print
+  position relative 
+  left -15px
+  margin 20px 0
+.favourite
+.print 
+  font-size 14px 
+  color black
+  display inline-block
+  text-decoration none
+  margin-left 10px
+.favourite:before
+  sprite($sprite-print1)
+  content ''
+  display inline-block
+  vertical-align: middle
+  margin-right 5px
+.print:before
+  sprite($sprite-print)
+  content ''
+  display inline-block
+  vertical-align: middle
+  margin-right 5px
+.social__item
+  display inline-block
+  margin-left 5px
+.social__link
+  display inline-block
+.fb 
+  sprite($sprite-soc1)
+.vk 
+  sprite($sprite-soc2)
+.tw 
+  sprite($sprite-soc3)
+.yt 
+  sprite($sprite-soc4)
+.yd 
+  sprite($sprite-soc5)
+.socials
+  padding 0px
+  margin 20px 0 0 0
+  position relative
+  left -10px

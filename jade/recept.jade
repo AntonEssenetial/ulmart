@@ -9,35 +9,8 @@ html(lang='ru')
           .b-catalog__left.b-ib-wrapper
             .b-sidebar__catalog-wrapper
               .b-sidebar__catalog.b-sidebar__catalog_white
-                .b-catalog__favorite
+                .b-catalog__favorite.b-catalog__favorite_rec
                   ul.catalog__acordion.catalog__acordion_new-icons
-                    li.catalog__list 
-                      a(href="#").catalog__title.result__item Товары со скидками
-                      ul.catalog__sub
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
-                    li.catalog__list 
-                      a(href="#").catalog__title.result__item Акции
-                      ul.catalog__sub
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
-                    li.catalog__list 
-                      a(href="#").catalog__title.result__item Избранное
-                      ul.catalog__sub
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
-                        li.catalog__item__sub 
-                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
                     li.catalog__list
                       a(href="#").catalog__title.catalog__title_grey.result__item Продукты питания
                       ul.catalog__sub
@@ -262,7 +235,16 @@ html(lang='ru')
               .b-catalog__rec.b-ib-wrapper
                 .b-grid__row.b-grid-rec
                   .b-grid__col
-                    img.rec-img(src="images/rec.jpg", alt="")
+                    a(href="#").b-rec-wrap-link.b-rec-wrap-link__top
+                      .b-rec__main-wrap
+                        .b-rec__descr
+                          .b-rec__descr-title Баноффи — английский десерт
+                        p.rec__descr-text Баноффи — английский десерт Однажды меня угостили десертом, который невозможно было раскусить. Назывался он баноффи, и я сразу понял, что не люблю его, кто будет рад грызть не...
+                        .prep__main
+                          ul.b-ib
+                            li Подготовление 15 минут
+                            li Приготовление 2 часа
+                      img.rec-img(src="images/rec.jpg", alt="")
                 .b-grid__row.b-grid-rec.b-ib-wrapper
                   .b-grid__col.b-grid__50.b-ib
                     a(href="#").b-rec-wrap-link
@@ -277,7 +259,7 @@ html(lang='ru')
                     a(href="#").b-rec-wrap-link
                       .b-rec__desrc-wrap
                         .b-rec__descr
-                          .b-rec__descr-title Сконы с избмом
+                          .b-rec__descr-title Баноффи — английский десерт
                         ul.prep__time
                           li Подготовление 15 минут
                           li Приготовление 2 часа
@@ -286,7 +268,7 @@ html(lang='ru')
                     a(href="#").b-rec-wrap-link
                       .b-rec__desrc-wrap
                         .b-rec__descr
-                          .b-rec__descr-title Сконы с избмом
+                          .b-rec__descr-title Сконы с избюмом
                         ul.prep__time
                           li Подготовление 15 минут
                           li Приготовление 2 часа
@@ -295,25 +277,25 @@ html(lang='ru')
                     a(href="#").b-rec-wrap-link
                       .b-rec__desrc-wrap
                         .b-rec__descr
-                          .b-rec__descr-title Сконы с избмом
+                          .b-rec__descr-title Утка с яблоками и медом
                         ul.prep__time
                           li Подготовление 15 минут
                           li Приготовление 2 часа
                       img.rec-img(src="images/rec5.jpg", alt="")
-                  .page__nav
-                    ul
-                      li
-                        a(href="") 1
-                      li
-                        a(href="") 2
-                      li
-                        a(href="") 3
-                      li
-                        a(href="") 4 
-                      li
-                        a(href="") 5
-                      li
-                        a(href="") Дальше
+            .page__nav-wrap.b-ib
+              ul.page__nav
+                li.nav__active
+                  a(href="") 1
+                li
+                  a(href="") 2
+                li
+                  a(href="") 3
+                li
+                  a(href="") 4 
+                li
+                  a(href="") 5
+                li
+                  a(href="") Дальше
         include footer.jade
     //- include popup.jade
     include scripts.jade
