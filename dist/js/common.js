@@ -38,6 +38,13 @@ jQuery(document).ready(function ($) {
         $('.js-custom-select').selectize();
     }
 
+    if ($('.js-custom-select2').length) {
+        $('.js-custom-select2').selectize({
+            readOnly: true, 
+            onDelete: function() { return false }
+        });
+    }
+
 
     /*
      * TABS

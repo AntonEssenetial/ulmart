@@ -1878,8 +1878,8 @@ input[type="text"].b-form-control {
     border-radius(50%)
     margin-top: -3px;
     margin-right: 9px;
-    trs()
     border 1px solid c-orange
+    transition: 0.25s ease-out;
   &:after  
     content ''
     color c-orange
@@ -1889,9 +1889,11 @@ input[type="text"].b-form-control {
     bottom: 0;
     left: 17px;
     margin: auto 0;
+    transition: 0.25s ease-out;
   &:hover:before
   &:hover:after
     transform: translateX(2px);
+    transition: 0.25s ease-out;
 .b-sidebar__catalog-wrapper
   margin 0 0 20px 0
   shadow()
@@ -2587,34 +2589,36 @@ input[type="checkbox"]
     background-size: cover;
 .b-grid-icons-6
   margin 30px 0 0 0
-.b-single-slide
-  width: 365px;
-  background: #FBFBFB
-  padding: 0 18px;
-  .b-products-slider
-    padding: 0px 0 4px 0;
-  .b-product-preview_ashan:hover 
-    box-shadow none
-  .slick-dots 
-    position relative 
-    top -165px
-    padding 0px 
-    text-align center
+.b-catalog__ashan
+  .b-single-slide
+    width: 365px;
+    background: #FBFBFB
+    padding: 0 18px;
+    .b-products-slider
+      padding: 0px 0 4px 0;
+    .b-product-preview_ashan:hover 
+      box-shadow none
+    .slick-dots 
+      position relative 
+      top -165px
+      padding 0px 
+      text-align center
 .b-product-preview__pic_margin
   margin 0 0px 30px 0
-.slick-dots
-  button
-    border none
-    background transparent
-  li 
-    display inline-block
-    margin 0 6px
-    width 8px
-    height @width 
-    background #E0E0DF
-    border-radius(50%)
-  .slick-active
-    background c-green
+.b-catalog__ashan
+  .slick-dots
+    button
+      border none
+      background transparent
+    li 
+      display inline-block
+      margin 0 6px
+      width 8px
+      height @width 
+      background #E0E0DF
+      border-radius(50%)
+    .slick-active
+      background c-green
 .b-product-discount
   color black
   font-size 20px
@@ -2655,6 +2659,7 @@ input[type="checkbox"]
   color black
   font-size 20px
   margin 21px 0 10px 0
+  text-decoration none
 .b-mini__preview
   width 120px
   text-align center 
@@ -2798,11 +2803,19 @@ input[type="checkbox"]
   position absolute 
   right 7px
   top 7px
+  trs()
 .prod__star
-  sprite($sprite-star)
-  display inline-block
-.active .prod__star
   sprite($sprite-star2)
+  display inline-block
+  opacity 0
+.b-product__star.active
+  .prod__star
+    sprite($sprite-star)
+    display inline-block
+    opacity 1
+.b-product-preview:hover 
+  .prod__star
+    opacity 1
 .b-header-search__left_p
   padding-left 0px
   position: relative;
@@ -3243,3 +3256,10 @@ textarea
   margin 20px 0 0 0
   position relative
   left -10px
+.js-custom-select2
+  .selectize-input input
+    color: transparent !important;
+  .selectize-input input
+    position: absolute !important;
+    top: -9999px;
+    left: -9999px;
