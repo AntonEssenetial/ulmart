@@ -2215,6 +2215,26 @@ input[type="checkbox"]
       sprite($sprite-c-27)
     &:nth-child(7) > a:before
       sprite($sprite-c-28)
+.favorite_rec
+  .catalog__list
+    &:nth-child(1) > a:before
+      sprite($sprite-c-2)
+    &:nth-child(2) > a:before
+      sprite($sprite-c-22)
+    &:nth-child(3) > a:before
+      sprite($sprite-c-23)
+    &:nth-child(4)
+      margin 0 0 6px 0
+      > a:before
+        sprite($sprite-c-24)
+    &:nth-child(5) > a:before 
+      sprite($sprite-c-25)
+    &:nth-child(6) > a:before
+      sprite($sprite-c-26)
+    &:nth-child(7) > a:before
+      sprite($sprite-c-27)
+    &:nth-child(8) > a:before
+      sprite($sprite-c-28)
 .b-catalog__all
   margin-bottom 30px
   .b-all__item
@@ -2660,6 +2680,7 @@ input[type="checkbox"]
   font-size 20px
   margin 21px 0 10px 0
   text-decoration none
+  display block
 .b-mini__preview
   width 120px
   text-align center 
@@ -2957,6 +2978,7 @@ input[type="checkbox"]
   color white
   line-height 22px
 .b-rec-wrap-link__top
+  position relative
   &:before 
     content ''
     display block
@@ -2966,7 +2988,7 @@ input[type="checkbox"]
     background url(../images/rec0.png) no-repeat center
     width 158px
     height @width
-    z-index 11
+    z-index 2
 .page__nav-wrap 
   padding 30px 0 20px 0
   text-align center
@@ -3147,7 +3169,7 @@ input[type="checkbox"]
 .blog__p
   font-size 14px
   line-height 20px
-  width 82%
+  width 81%
   margin-left 20px
 .b-blog__text
   margin 10px 0
@@ -3214,16 +3236,16 @@ textarea
 .small__rate__link:hover 
   sprite($sprite-small-star-active) 
 .favourite__print
-  position relative 
-  left -15px
   margin 20px 0
+.b-blog__row .favourite__print
+  position relative 
 .favourite
 .print 
   font-size 14px 
   color black
   display inline-block
   text-decoration none
-  margin-left 10px
+  margin-right 10px
 .favourite:before
   sprite($sprite-print1)
   content ''
@@ -3238,7 +3260,7 @@ textarea
   margin-right 5px
 .social__item
   display inline-block
-  margin-left 5px
+  margin-right 5px
 .social__link
   display inline-block
 .fb 
@@ -3254,8 +3276,8 @@ textarea
 .socials
   padding 0px
   margin 20px 0 0 0
+.b-blog__row .socials
   position relative
-  left -10px
 .js-custom-select2
   .selectize-input input
     color: transparent !important;
@@ -3263,3 +3285,102 @@ textarea
     position: absolute !important;
     top: -9999px;
     left: -9999px;
+.b-rec__col__63
+  display inline-block
+  width 63%
+  img 
+    width 100%
+    max-width 100%
+.b-rec__col__37
+  width 37%
+.b-rec__header 
+  shadow()
+  margin 0 0 29px 0
+.b-rec__text
+  font-size 14px
+  line-height 20px
+  margin-bottom 40px
+.for__input_rec
+  width 69%
+  vertical-align middle
+.big__rate__item
+  display inline-block
+  &:hover 
+    .big__rate__link 
+      sprite($sprite-big-star-active)
+.big__rate__link
+  sprite($sprite-big-star)
+  display inline-block
+.big__rate_active a 
+  sprite($sprite-big-star-active)
+.form__rate 
+  display inline-block
+  width 31%
+  text-align right
+  vertical-align middle
+.rate__text
+  font-size 13px
+  display inline-block
+  margin-top 5px
+.big__rate 
+  padding 0px
+.big__rate-wrap
+  width 135px
+  text-align center
+  display inline-block
+.prep__main_rec
+  &:before
+    sprite($sprite-clock)
+  li 
+    color #767676
+.rec__text
+  font-size 13px
+  line-height 20px
+.rec__h1
+  font-size 20px
+  margin-top 30px
+.b-rec__descr
+  padding 10px 50px
+.b-rec__sidebar
+  width 37%
+  display inline-block
+  vertical-align top
+.b-blog__rec-content
+  padding-right 30px
+.b-products-block__rec
+  padding: 20px 10px 20px 10px;
+.b-table 
+  font-size 14px
+  margin-bottom 10px
+  line-height 30px
+  table 
+    width 100%
+    td:last-child
+      color #808080
+.b-rec__col
+  shadow()
+.b-rec__cont
+  padding 30px
+.b-rec__col
+  margin-bottom 20px
+.top__rec__text 
+  display inline-block
+  vertical-align middle
+  width 66%
+  margin-left 6%
+.top__rec__link 
+  font-size 13px
+  color #808080
+  text-decoration none
+  vertical-align middle
+.top__rec__img 
+  display inline-block
+  vertical-align middle
+.top__rec 
+  padding 0px
+.top__rec__item
+  margin-bottom 15px
+.b-rec__cont_small
+  padding 20px 30px 10px 30px
+.mfp-close-btn-in .mfp-close
+  color white

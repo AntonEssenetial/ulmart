@@ -9,10 +9,10 @@ html(lang='ru')
           .b-catalog__left.b-ib-wrapper
             .b-sidebar__catalog-wrapper
               .b-sidebar__catalog.b-sidebar__catalog_white
-                .b-catalog__favorite.b-catalog__favorite_rec
+                .b-catalog__favorite.favorite_rec
                   ul.catalog__acordion.catalog__acordion_new-icons
                     li.catalog__list
-                      a(href="#").catalog__title.catalog__title_grey.result__item Продукты питания
+                      a(href="#").catalog__title.result__item Избранное
                       ul.catalog__sub
                         li.catalog__item__sub 
                           a(href="").catalog__item Овощи, фрукты, зелень, грибы
@@ -221,6 +221,36 @@ html(lang='ru')
                               a(href="").catalog__item Овощи, фрукты, зелень, грибы
                             li.catalog__item__sub.catalog__item__sub_orange
                               a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                    li.catalog__list
+                      a(href="#").catalog__title.catalog__title_grey.result__item Кабачки
+                      ul.catalog__sub
+                        li.catalog__item__sub 
+                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                          ul.catalog__sub
+                            li.catalog__item__sub.catalog__item__sub_orange 
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                            li.catalog__item__sub.catalog__item__sub_orange 
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                            li.catalog__item__sub.catalog__item__sub_orange
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                        li.catalog__item__sub 
+                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                          ul.catalog__sub
+                            li.catalog__item__sub.catalog__item__sub_orange 
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                            li.catalog__item__sub.catalog__item__sub_orange 
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                            li.catalog__item__sub.catalog__item__sub_orange
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                        li.catalog__item__sub 
+                          a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                          ul.catalog__sub
+                            li.catalog__item__sub.catalog__item__sub_orange 
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                            li.catalog__item__sub.catalog__item__sub_orange 
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
+                            li.catalog__item__sub.catalog__item__sub_orange
+                              a(href="").catalog__item Овощи, фрукты, зелень, грибы
           .b-catalog__right.b-ib-wrapper
             .b-content__bread
               ul.b-bread
@@ -231,70 +261,175 @@ html(lang='ru')
                 li.bread__list
                   a.bread__item(href="") Вост кухня
                 li.bread__list Кабачки
-            .b-catalog__content.b-ib
-              .b-catalog__rec.b-ib-wrapper
-                .b-grid__row.b-grid-rec
-                  .b-grid__col
-                    a(href="#").b-rec-wrap-link.b-rec-wrap-link__top
-                      .b-rec__main-wrap
-                        .b-rec__descr
-                          .b-rec__descr-title Баноффи — английский десерт
-                        p.rec__descr-text Баноффи — английский десерт Однажды меня угостили десертом, который невозможно было раскусить. Назывался он баноффи, и я сразу понял, что не люблю его, кто будет рад грызть не...
-                        .prep__main
-                          ul.b-ib
-                            li Подготовление 15 минут
-                            li Приготовление 2 часа
-                      img.rec-img(src="images/rec.jpg", alt="")
-                .b-grid__row.b-grid-rec.b-ib-wrapper
-                  .b-grid__col.b-grid__50.b-ib
-                    a(href="#").b-rec-wrap-link
-                      .b-rec__desrc-wrap
-                        .b-rec__descr
-                          .b-rec__descr-title Сконы с избмом
-                        ul.prep__time
-                          li Подготовление 15 минут
-                          li Приготовление 2 часа
-                      img.rec-img(src="images/rec2.jpg", alt="")
-                  .b-grid__col.b-grid__50.b-ib
-                    a(href="#").b-rec-wrap-link
-                      .b-rec__desrc-wrap
-                        .b-rec__descr
-                          .b-rec__descr-title Баноффи — английский десерт
-                        ul.prep__time
-                          li Подготовление 15 минут
-                          li Приготовление 2 часа
-                      img.rec-img(src="images/rec3.jpg", alt="")
-                  .b-grid__col.b-grid__50.b-ib
-                    a(href="#").b-rec-wrap-link
-                      .b-rec__desrc-wrap
-                        .b-rec__descr
-                          .b-rec__descr-title Сконы с избюмом
-                        ul.prep__time
-                          li Подготовление 15 минут
-                          li Приготовление 2 часа
-                      img.rec-img(src="images/rec4.jpg", alt="")
-                  .b-grid__col.b-grid__50.b-ib
-                    a(href="#").b-rec-wrap-link
-                      .b-rec__desrc-wrap
-                        .b-rec__descr
-                          .b-rec__descr-title Утка с яблоками и медом
-                        ul.prep__time
-                          li Подготовление 15 минут
-                          li Приготовление 2 часа
-                      img.rec-img(src="images/rec5.jpg", alt="")
-            .page__nav-wrap.b-ib
-              ul.page__nav
-                li.nav__active
-                  a(href="") 1
-                li
-                  a(href="") 2
-                li
-                  a(href="") 3
-                li
-                  a(href="") 4 
-                li
-                  a(href="") 5
-                li
-                  a(href="") Дальше
+            .b-rec__header.b-ib-wrapper
+              .b-rec__col__63.b-ib
+                .b-rec-wrap-link__top
+                  img(src="images/rec7.jpg", alt="")
+              .b-rec__col__37.b-ib
+                .b-rec__descr 
+                  .head__rate 
+                    ul.big__rate
+                      li.big__rate__item.big__rate_active
+                        a(href="").big__rate__link
+                      li.big__rate__item.big__rate_active
+                        a(href="").big__rate__link
+                      li.big__rate__item.big__rate_active
+                        a(href="").big__rate__link
+                      li.big__rate__item
+                        a(href="").big__rate__link
+                      li.big__rate__item
+                        a(href="").big__rate__link
+                    span.rate__text оценка пользователей
+                  h1.rec__h1 Мидии в пивном соусе по-бельгийски
+                  p.rec__text Баноффи — английский десерт Однажды меня угостили десертом, который невозможно было
+                  .prep__main.prep__main_rec
+                    ul.b-ib
+                      li Подготовление 15 минут
+                      li Приготовление 2 часа
+                  ul.socials
+                    li.social__item
+                      a.social__link.fb(href="")
+                    li.social__item
+                      a.social__link.vk(href="")
+                    li.social__item
+                      a.social__link.tw(href="")
+                    li.social__item
+                      a.social__link.yt(href="")
+                    li.social__item
+                      a.social__link.yd(href="")
+                  .favourite__print
+                    a(href="").favourite В избранное
+                    a(href="").print Распечатать  
+            .b-blog__col.b-rec__col__63
+              .b-blog__rec-content
+                .b-rec__text Осенью у меня просыпается особая страсть к печенью, потому что можно уже чай пить в больших количествах, но ещё не так холодно, когда требуешь от десерта чего-то более серьезного. И, как я всегда говорю, печеньем удобно угощать: завернули в бумагу, пакет, коробку, стакан и на те «Приятного чаепития, Иван Фёдорович, кстати, а что там с моим повышением?». Вкуснее печенья, может быть только печенье с орехами, и что бы я вам ни говорил, знайте, что более сильной любви, чем с арахисом, у меня не было. А как это волшебно, хрустеть круглыми сладкими шайбочками с солёным арахисом, аромат которого почувствуют даже соседи. Всё?! Нет! Вкуснее печенья с орехами, может быть печенье с кремовой прослойкой. Это я ещё в детстве понял, намазывая половинки маслом с джемом или сахаром. И вот здесь Джек-Пот. Мой новый белоснежный крем — то, что доктор прописал. Мне даже первые минуты было жалко есть эти шедевры, но оказалось, что никакие музеи не хотят выставлять их на экспозицию, поэтому пришлось есть. Если есть черный чай с чабрецом — ну что, я думаю вы узнаете, что такое рай на земле.
+                img(src="images/art.jpg", alt="").b-blog__art-img
+                .b-blog__text
+                  span.blog__circle.b-ib 1
+                  p.b-ib.blog__p Первым делом в чашу миксера насыпаем два вида сахара по 100 грамм (белый+тростниковый). Можно взять 200 любого из них, но смеси всегда вкуснее, согласны? Следом мягкое сливочное масло (100 гр, жирность 82% и никак не ниже).
+                img(src="images/art1.jpg", alt="").b-blog__art-img
+                .b-blog__text
+                  span.blog__circle.b-ib 2
+                  p.b-ib.blog__p Первым делом в чашу миксера насыпаем два вида сахара по 100 грамм (белый+тростниковый). Можно взять 200 любого из них, но смеси всегда вкуснее, согласны? Следом мягкое сливочное масло (100 гр, жирность 82% и никак не ниже).
+                img(src="images/art3.jpg", alt="").b-blog__art-img
+                .b-blog__text
+                  span.blog__circle.b-ib 3
+                  p.b-ib.blog__p Первым делом в чашу миксера насыпаем два вида сахара по 100 грамм (белый+тростниковый). Можно взять 200 любого из них, но смеси всегда вкуснее, согласны? Следом мягкое сливочное масло (100 гр, жирность 82% и никак не ниже).
+              .b-blog__form
+                .b-blog__comment 
+                  .b-blog__form-title Комментарии
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис:  6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте самовывоза
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис:  6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте самовывоза
+                .b-blog__form-title Оставить комментарий
+                form(action="")
+                  input.form__input.for__input_rec(type="text", placeholder='Ваше имя')
+                  .form__rate
+                    .big__rate-wrap 
+                      ul.big__rate
+                        li.big__rate__item.big__rate_active
+                          a(href="").big__rate__link
+                        li.big__rate__item.big__rate_active
+                          a(href="").big__rate__link
+                        li.big__rate__item.big__rate_active
+                          a(href="").big__rate__link
+                        li.big__rate__item
+                          a(href="").big__rate__link
+                        li.big__rate__item
+                          a(href="").big__rate__link
+                      span.rate__text ваша оценка
+                  textarea.form__textarea(name="message", placeholder='Ваш камментарий')
+                  button.b-button.b-button_green Оставить комментарий
+            .b-blog__col.b-rec__sidebar
+              .b-rec__col
+                .b-content__block.b-ib-wrapper
+                  b-products-block-top.b-products-block__rec.b-products-block-top.b-ib-wrapper
+                    .b-ib
+                        .b-products-block-top__title
+                          <span class="b-icon_hot"></span>
+                          | Ингредиенты
+                .b-rec__cont
+                  .b-table 
+                    table
+                      tr
+                        td Сметана (жирная)
+                        td 0.75 стакана
+                      tr
+                        td Зеленый лук
+                        td пучок
+                      tr
+                        td Дижонская горчица
+                        td 3 ст.л.
+                      tr
+                        td Зернистая горчица
+                        td 1 т.л.
+                      tr
+                        td Эстрагон
+                        td 1 ст.л.
+                      tr
+                        td Сливочное масло
+                        td 3 ст.л.
+                      tr
+                        td Зубчики чеснока
+                        td 4 шт
+                      tr
+                        td Тимьян сушеный
+                        td 1 ст.л.
+                      tr
+                        td Мидии
+                        td 1 кг
+                      tr
+                        td Крупный помидор
+                        td 1 шт
+                      tr
+                        td Бельгийское пиво
+                        td 0.5 л
+                      tr
+                        td Соль
+                        td по вкусу
+                      tr
+                        td Свежемолотый перец
+                        td по вкусу
+                      tr
+                        td Петрушка
+                        td пучок
+                  button.b-button.b-button_green Купить все ингредиенты из списка
         include footer.jade
     include scripts.jade
