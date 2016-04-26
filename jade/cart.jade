@@ -1,0 +1,798 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-popup-wrapper
+          .b-popup.b-popup-card.b-popu-card_accepted
+            .b-popup-accepted
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .icon-a
+              .accepted__content
+                .accepted__wrapper
+                  .accepted__title Корзина с друзьями
+                  span.accepted__desc Введите название
+                form(action="")
+                  input(type="text",placeholder='Название не обязательно').form__input.form__input_accepted
+                  button.b-button.b-button_green.b-button_check Создать корзину
+          .b-popup.b-popup-card.b-popu-card_accepted
+            .b-popup-accepted
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .icon-b
+              .accepted__content
+                .accepted__wrapper
+                  .accepted__title Отлично
+                  span.accepted__desc А теперь дайте эту ссылку своим друзьям
+                form(action="")
+                  span.form__input_accepted isdasd.ru/sdascx.r238
+                  button.b-button.b-button_green.b-button_check Создать корзину
+          .b-popup.b-popup-card.b-popu-card_accepted
+            .b-popup-accepted
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .icon-c
+              .accepted__content
+                .accepted__wrapper
+                  .accepted__title Ваша корзина пуста :(
+                  span.accepted__desc Ищите лучшие товары используя поиск по сайту
+                .form__wrapper
+                  form(action="")
+                    .b-header-search__left.b-ib
+                    .b-header-search__center.b-ib
+                      input.b-header-search__input.accepted__input(type="text" placeholder="Например, кабачки" value="")
+                    .b-header-search__right.b-ib
+                      button.b-button.b-button_green Найти
+                .accepted__wrapper 
+                  span.accepted__desc или Вы можете оформить заказ по телефону 
+                  span.accepted__phone +7 (922) 915-37-15
+          .b-popup.b-popup-card.b-popu-card_recovery
+            .b-popup-recovery
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .icon-d
+                    .recovery__title Восстановление пароля
+              .accepted__content
+                .accepted__wrapper
+                  span.accepted__desc Сообщите вашу электронную почту или номер <br> телефона, указанные при регистрации
+                form(action="")
+                  input(type="text",placeholder='adsada@masdsada.ru').form__input.form__input_accepted
+                  span.mail__example Например, mail@mdass.ru
+                  button.b-button.b-button_green.b-button_check Напомнить пароль
+              .accepetd__fotter
+                span Вспомнили пароль? 
+                  a(href="") Авторизуйтесь
+                  |  прямо сейчас!
+          .b-popup.b-popup-card.b-popu-card_recovery.b-popu-card_recovery_authorise
+            .b-popup-recovery
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .icon-e
+                    .recovery__title Авторизация
+              .accepted__content
+                .accepetd__col.accepted__60
+                  .accepted__wrapper
+                    span.accepted__desc Введите ваш логин, e-mail или телефон
+                  form(action="")
+                    input(type="text",placeholder='adsada@masdsada.ru').form__input.form__input_accepted
+                    .rec__password
+                      span.mail__example Введите пароль
+                      a(href="").forget Забыли пароль
+                    input(type="text").form__input.form__input_accepted
+                    button.b-button.b-button_green.b-button_check Войти
+                .accepetd__col.accepted__40
+                  span Вы можете начать покупки, используя свой логин в сети
+                  ul.socials__login
+                    li.socials__login__item
+                      a(href="").socials__login__link
+                    li.socials__login__item
+                      a(href="").socials__login__link
+                    li.socials__login__item
+                      a(href="").socials__login__link
+              .accepetd__fotter
+                span Вспомнили пароль? 
+                  a(href="") Зарегистрируйтесь
+                  |  прямо сейчас!
+          .b-popup.b-popup-card.b-popu-card_cart
+            .b-popup-cart
+              button.b-button.b-button__close-popup
+              .b-popup-cart__content-wrapper.b-custom-scroll.js-custom-scroll
+                .b-popup-cart__head
+                  .cart__top
+                    .cart__title.b-ib Корзина с друзьмя
+                    .cart__top__col1.b-ib
+                      button.b-button.b-button_green.b-button_small Показать рдузей
+                  .b-products-block-top.b-ib.bg_reverse
+                    .cart__img-wrapper
+                      .cart__img.b-ib
+                        img.b-icon(src="images/karusel.png", alt="")
+                      .cart__prod-title.b-ib
+                        .search__title Карусель
+                          span.cart__title-item , 3 товара на сумму 2 650
+                          span
+                        .cart__deliv
+                          .cart__cl.b-ib
+                            span.cart__cl-1 Ближайшая доставка: 
+                            span.cart__cl-1 15:00-17:00
+                          .cart__cl-50.b-ib.b-products-block-top__right
+                            a(href="").b-button.b-button_show.b-button_show_small Все интервалы
+                .b-popup-cart__content
+                  .cart__item
+                    .b-products-slider__item
+                      #product1.b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in.b-cont__in_cart 
+                            button(data-toggle-element="#product1", data-toggle-class="open").b-button.js-toggle-class Добавить комментарий
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-product-del.b-ib
+                                button.b-button.b-button__del Удалить
+                              .b-product-textarea
+                                textarea(name="comment").form__textarea.form__textarea_cart
+                              .b-ib.cart-com-buttons
+                                button(type="submit").b-button.b-button_green.b-button_small Сохранить
+                                button(type="submit").b-button.b-button_green.b-button_small.b-button_grey Отменить
+                  .cart__item
+                    .b-products-slider__item
+                      #product2.b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in.b-cont__in_cart 
+                            button(data-toggle-element="#product2", data-toggle-class="open").b-button.js-toggle-class Добавить комментарий
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-product-del.b-ib
+                                button.b-button.b-button__del Удалить
+                              .b-product-textarea
+                                textarea(name="comment").form__textarea.form__textarea_cart
+                              .b-ib.cart-com-buttons
+                                button(type="submit").b-button.b-button_green.b-button_small Сохранить
+                                button(type="submit").b-button.b-button_green.b-button_small.b-button_grey Отменить
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                          .add-by 
+                            span.add-by__str Добавил
+                            a(href="").add-by__user Олег
+                  .cart__item
+                    .b-products-slider__item
+                      #product3.b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in.b-cont__in_cart 
+                            button(data-toggle-element="#product3", data-toggle-class="open").b-button.js-toggle-class Добавить комментарий
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-product-del.b-ib
+                                button.b-button.b-button__del Удалить
+                              .b-product-textarea
+                                textarea(name="comment").form__textarea.form__textarea_cart
+                              .b-ib.cart-com-buttons
+                                button(type="submit").b-button.b-button_green.b-button_small Сохранить
+                                button(type="submit").b-button.b-button_green.b-button_small.b-button_grey Отменить
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                          .add-by 
+                            span.add-by__str Добавил
+                            a(href="").add-by__user Олег
+                  .cart__item
+                    .b-products-slider__item
+                      #product4.b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in.b-cont__in_cart 
+                            button(data-toggle-element="#product4", data-toggle-class="open").b-button.js-toggle-class Добавить комментарий
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-product-del.b-ib
+                                button.b-button.b-button__del Удалить
+                              .b-product-textarea
+                                textarea(name="comment").form__textarea.form__textarea_cart
+                              .b-ib.cart-com-buttons
+                                button(type="submit").b-button.b-button_green.b-button_small Сохранить
+                                button(type="submit").b-button.b-button_green.b-button_small.b-button_grey Отменить
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                          .add-by 
+                            span.add-by__str Добавил
+                            a(href="").add-by__user Олег
+          .b-popup.b-popup-card.b-popu-card_cart
+            .b-popup-cart
+              button.b-button.b-button__close-popup
+              .b-popup-cart__content-wrapper.b-custom-scroll.js-custom-scroll
+                .b-popup-cart__head
+                  .b-products-block-top.b-ib.bg_reverse
+                    .cart__img-wrapper
+                      .cart__img.b-ib
+                        img.b-icon(src="images/karusel.png", alt="")
+                      .cart__prod-title.b-ib
+                        .search__title Карусель
+                          span.cart__title-item , 3 товара на сумму 2 650
+                          span
+                        .cart__deliv
+                          .cart__cl.b-ib
+                            span.cart__cl-1 Ближайшая доставка: 
+                            span.cart__cl-1 15:00-17:00
+                          .cart__cl-50.b-ib.b-products-block-top__right
+                            a(href="").b-button.b-button_show.b-button_show_small Все интервалы
+                .b-popup-cart__content
+                  .cart__item
+                    .b-products-slider__item
+                      #product5.b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in.b-cont__in_cart 
+                            button(data-toggle-element="#product5", data-toggle-class="open").b-button.js-toggle-class Добавить комментарий
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-product-del.b-ib
+                                button.b-button.b-button__del Удалить
+                              .b-product-textarea
+                                textarea(name="comment").form__textarea.form__textarea_cart
+                              .b-ib.cart-com-buttons
+                                button(type="submit").b-button.b-button_green.b-button_small Сохранить
+                                button(type="submit").b-button.b-button_green.b-button_small.b-button_grey Отменить
+                  .cart__item
+                    .b-products-slider__item
+                      #product6.b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in.b-cont__in_cart 
+                            button(data-toggle-element="#product6", data-toggle-class="open").b-button.js-toggle-class Добавить комментарий
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-product-del.b-ib
+                                button.b-button.b-button__del Удалить
+                              .b-product-textarea
+                                textarea(name="comment").form__textarea.form__textarea_cart
+                              .b-ib.cart-com-buttons
+                                button(type="submit").b-button.b-button_green.b-button_small Сохранить
+                                button(type="submit").b-button.b-button_green.b-button_small.b-button_grey Отменить
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                          .add-by 
+                            span.add-by__str Добавил
+                            a(href="").add-by__user Олег
+                  .cart__item
+                    .b-products-slider__item
+                      #product7.b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in.b-cont__in_cart 
+                            button(data-toggle-element="#product7", data-toggle-class="open").b-button.js-toggle-class Добавить комментарий
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-product-del.b-ib
+                                button.b-button.b-button__del Удалить
+                              .b-product-textarea
+                                textarea(name="comment").form__textarea.form__textarea_cart
+                              .b-ib.cart-com-buttons
+                                button(type="submit").b-button.b-button_green.b-button_small Сохранить
+                                button(type="submit").b-button.b-button_green.b-button_small.b-button_grey Отменить
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                          .add-by 
+                            span.add-by__str Добавил
+                            a(href="").add-by__user Олег
+                  .cart__item
+                    .b-products-slider__item
+                      #product8.b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in.b-cont__in_cart 
+                            button(data-toggle-element="#product8", data-toggle-class="open").b-button.js-toggle-class Добавить комментарий
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-product-del.b-ib
+                                button.b-button.b-button__del Удалить
+                              .b-product-textarea
+                                textarea(name="comment").form__textarea.form__textarea_cart
+                              .b-ib.cart-com-buttons
+                                button(type="submit").b-button.b-button_green.b-button_small Сохранить
+                                button(type="submit").b-button.b-button_green.b-button_small.b-button_grey Отменить
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                          .add-by 
+                            span.add-by__str Добавил
+                            a(href="").add-by__user Олег
+          .b-popup.b-popup-card.b-popu-card_check
+            .b-popup-check
+              button.b-button.b-button__close-popup
+              button.b-button.check__back Вернуться к покупкам
+              .check__title Ваш заказ
+              .check__total-items
+                .check__total Итого: 
+                  span 3 товара на сумму 2 650
+                  span.check-rub &#8381
+              button.b-button.b-button_green.b-button_check.b-button_big  Оформить заказ
+          .b-popup.b-popup-card.b-popu-card_check
+            .b-popup-check
+              button.b-button.b-button__close-popup
+              button.b-button.check__back Вернуться к покупкам
+              .check__title Ваш заказ
+              .check__total-items
+                .check__total Итого: 
+                  span 3 товара на сумму 2 650
+                  span.check-rub &#8381
+              .check__friends
+                .check__total Вы: 
+                  span 3 товара на сумму 2 650
+                  span.check-rub &#8381
+                .check__total Алексей: 
+                  span 3 товара на сумму 2 650
+                  span.check-rub &#8381
+                .check__total Олег: 
+                  span 3 товара на сумму 2 650
+                  span.check-rub &#8381
+              button.b-button.b-button_green.b-button_check.b-button_big  Оформить заказ
+          .b-popup.b-popup-card.b-popu-card_friends
+            .b-popup-friends
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .cart__top
+                  .cart__title.b-ib Корзина с друзьмя
+                  .cart__top__col1.b-ib
+                    button.b-button.b-button_green.b-button_small Показать рдузей
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .search__title Ссылка для приглашения
+                      .invite__link 
+                        span isdasd.ru/sdascx.r238
+              .friends__table 
+                table
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .offline он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+          .b-popup.b-popup-card.b-popu-card_friends
+            .b-popup-friends
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .cart__top
+                  .cart__title.b-ib Корзина с друзьмя
+                  .cart__top__col1.b-ib
+                    button.b-button.b-button_green.b-button_small Показать рдузей
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .search__title Ссылка для приглашения
+                      .invite__link 
+                        span isdasd.ru/sdascx.r238
+              .friend__connected
+                span.connected.b-ib
+                span.connected-to-cart.b-ib Сергей подключился к корзине!
+              .friends__table 
+                table
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .offline он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+                  tr
+                    td
+                      button.b-button.b-button_close
+                    td
+                      .check__total Итого: 
+                        span 3 товара на сумму 2 650
+                        span.check-rub &#8381
+                    td
+                      .online он-лайн
+          .b-popup.b-popup-card.b-popu-card_interval
+            .b-popup-interval
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .search__title Интервалы
+              .interval__content
+                .interval__img-wrapper
+                  .interval__img
+                    a(href="")
+                      img(src="images/interval.jpg", alt="")
+                .interval__table
+                  table
+                    tr
+                      td 
+                        a(href="").interval__date Сегодня, 13 декабря
+                      td
+                        span.interval__time 14:00 - 15:00
+                      td
+                        span.interval__price недоступно
+                    tr
+                      td 
+                        a(href="").interval__date Завтра, 14 декабря
+                      td
+                        span.interval__time 15:00 - 16:00
+                      td
+                        span.interval__price 258 Р
+                    tr
+                      td 
+                        a(href="").interval__date Понедельник, 15 декабря
+                      td 
+                        span.interval__time 16:00 - 17:00
+                      td
+                        span.interval__price бесплатно
+                    tr
+                      td 
+                        a(href="").interval__date Вторник, 16 декабря
+                      td 
+                        span.interval__time 17:00 - 18:00
+                      td
+                        span.interval__price бесплатно
+                    tr
+                      td 
+                        a(href="").interval__date Среда, 17 декабря
+                      td
+                        span.interval__time 18:00 - 19:00
+                      td
+                        span.interval__price бесплатно
+                    tr
+                      td 
+                        a(href="").interval__date Четверг, 18 декабря
+                      td
+                        span.interval__time 19:00 - 20:00
+                      td
+                        span.interval__price 258 Р
+                    tr
+                      td 
+                        a(href="").interval__date Пятница, 19 декабря
+                      td
+                        span.interval__time 20:00 - 21:00
+                      td
+                        span.interval__price 258 Р
+                    tr
+                      td 
+                        a(href="").interval__date Суббота, 20 декабря
+                      td
+                        span.interval__time 20:00 - 21:00
+                      td
+                        span.interval__price 258 Р
+          .b-popup.b-popup-card.b-popu-card_intervals
+            .b-popup-intervas
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .search__title Интервалы
+              .intervals__content
+                .intervals__row
+                  .intervals__coll.b-ib
+                    .interval__img-wrapper
+                      .interval__img.interval__img-100
+                        a(href="")
+                          img(src="images/interval.jpg", alt="")
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    a(href="").intervals__all все интервалы
+                  .intervals__coll.b-ib
+                    .interval__img-wrapper
+                      .interval__img.interval__img-100
+                        a(href="")
+                          img(src="images/interval.jpg", alt="")
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 
+                        span.free__price бесплатно
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    a(href="").intervals__all все интервалы
+                .intervals__row
+                  .intervals__coll.b-ib
+                    .interval__img-wrapper
+                      .interval__img.interval__img-100
+                        a(href="")
+                          img(src="images/interval.jpg", alt="")
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    a(href="").intervals__all все интервалы
+                  .intervals__coll.b-ib
+                    .interval__img-wrapper
+                      .interval__img.interval__img-100
+                        a(href="")
+                          img(src="images/interval.jpg", alt="")
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    .intervals
+                      .intervals__time.b-ib
+                        span В ближайшие 2 часа
+                        span Сегодня, 14 декабря
+                      .intervals__price.b-ib 252 
+                        span &#8381
+                    a(href="").intervals__all все интервалы
+        include
+    include scripts.jade

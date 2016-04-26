@@ -3226,6 +3226,8 @@ textarea
   margin-top 10px
   &:last-child
     border none
+.small__rate
+  padding 0px
 .small__rate__link
   sprite($sprite-small-star)
   display block
@@ -3384,3 +3386,748 @@ textarea
   padding 20px 30px 10px 30px
 .mfp-close-btn-in .mfp-close
   color white
+// Popup wrapper
+.b-popup-wrapper
+  overflow-y scroll
+  position fixed 
+  width 100%
+  height @width
+  background rgba(255, 156, 34, 0.69);
+  left 0px 
+  top 0px
+.b-popup-card
+  background white 
+  padding 30px 50px
+  width 877px
+  box-shadow: 0 0 62px rgba(0, 0, 0, 0.2);
+  margin-bottom 20px
+.b-popup-comment
+  margin-top 20px
+  width 877px
+  box-shadow: 0 0 62px rgba(0, 0, 0, 0.2);
+.popup__h1
+  font-size 36px
+  font-family fontHelveticaThin
+  line-height 45px
+  margin 0 0 40px 0
+.b-popup__col_1
+  width 50%
+.b-popup__col_2
+  width 50%
+  vertical-align top
+.b-popup__descr
+  font-size 18px
+  margin 0 0 20px
+  line-height 23px
+.lists__item
+  font-size 12px
+  line-height 15px
+.lists__element
+  margin-bottom 10px
+.b-popup-lists
+  padding 0px
+.b-popup_price 
+  font-size 36px
+  width 30%
+.b-popup_preview
+  width 70%
+.b-product-preview_popup 
+  padding: 10px 30px 10px 22px;
+  border-radius(30px)
+.b-button_plus_popup
+  right 30px
+  top 10px
+.b-button_minus_popup
+  right 30px
+  top 25px
+.b-product-preview__count_popup
+  width 39%
+  margin-left 10px
+.b-button_popup
+  width 100%
+  position relative
+  height 45px
+  padding: 0 0px 0 14px;
+  &:before
+    content ''
+    sprite($sprite-cart2)
+    left 13px 
+    top 13px
+    z-index 2
+    position absolute
+.b-popup-lists
+  margin 25px 0 0 0
+.b-popup-product__wrapper
+  padding 0 19px
+.print__sup:before
+  sprite($sprite-pog)
+.b-prod__img 
+  img 
+    margin 25px 0 15px 0
+    width 100%
+    max-width 100%
+.lists__item
+  width 80%
+  vertical-align middle
+  display inline-block
+  margin-left 15px
+.lists__element
+  &:first-child:before 
+    content ''
+    sprite($sprite-pop1)
+    display inline-block
+    vertical-align middle
+    margin 10px 0
+  &:nth-child(2):before 
+    content ''
+    sprite($sprite-pop2)
+    display inline-block
+    vertical-align middle
+    margin 10px 0
+  &:last-child:before 
+    content ''
+    sprite($sprite-pop3)
+    display inline-block
+    vertical-align middle
+    margin 10px 0
+.b-product-preview__incart
+  width 53%
+.b-popup__row 
+  &:after 
+    margin: 40px 0 0 0;
+    content: '';
+    background: url("../images/footer-wave.png") 50% 50% repeat-x;
+    display: block;
+    width: 100%;
+    height: 10px;
+.b-popup__close
+  sprite($sprite-close2)
+  position absolute
+  right 20px 
+  top 20px
+  outline: none;
+  border none
+  background-color transparent
+.b-popup-card
+  position relative
+.b-products-slider__popup.slick-initialized
+  padding-left: 10px;
+  padding-right: 10px;
+.b-products-slider__popup
+  .b-product-preview_ashan
+    width 215px 
+  .b-product-preview__pic img
+    width 60%
+  .b-product-preview__pic
+    height 150px
+  .b-product-preview_ashan:hover 
+    box-shadow none
+  .slick-arrow
+    margin 0px 20px 
+    top -66px
+  .slick-dots
+    position relative 
+    padding 0px 
+    text-align center
+    margin 10px 0 0 0
+    button
+      border none
+      background transparent
+    li 
+      display inline-block
+      margin 0 6px
+      width 8px
+      height @width 
+      background #E0E0DF
+      border-radius(50%)
+    .slick-active
+      background c-green
+.b-comment-slider
+  .b-products-slider__slider .slick-prev
+    left 0px
+  .b-products-slider__slider .slick-next 
+    right 0px
+  .b-products-slider__slider.slick-initialized
+    padding-left: 96px;
+    padding-right: 96px;
+  .slick-dots
+    position relative 
+    padding 0px 
+    text-align center
+    margin 10px 0 0 0
+    button
+      border none
+      background transparent
+    li 
+      display inline-block
+      margin 0 6px
+      width 8px
+      height @width 
+      background #E0E0DF
+      border-radius(50%)
+    .slick-active
+      background c-green
+.b-same__wrapper
+  text-align center
+  a 
+    font-size 18px
+.b-same__products
+  display inline-block 
+  background #f3f2f0
+  border-radius(30px)
+.b-popup__slider
+  padding 45px 0 0 0
+.button__tab
+  font-size 18px
+  border none 
+  background transparent
+  outline none
+  border-radius(30px)
+  padding: 17px
+.button__tab.active 
+  background c-green
+  color white
+.b-blog_popup
+  text-align center
+.cart__col-1 
+  width 18%
+  vertical-align top
+.cart__col-2 
+  width 77%
+  margin-left 5%
+.b-product-preview_border-cart
+  padding 20px
+  width 100%
+  margin 0px
+  margin-right 10px
+  &:after 
+    content ''
+    width 20px 
+    height 1px 
+    background white
+    position absolute
+    display block
+    bottom -1px
+    z-index 1
+    right 0px
+.b-popu-card_cart
+  .b-product-preview__pic
+    height auto
+  .b-products-block-top
+    width 100%
+  .b-product-preview__name 
+    display block
+    height auto
+  .jspDrag
+    background-color: #cfcfcf
+    border-radius: 5px;
+  .jspTrack
+    background-color: #f0efec;
+    border-radius: 5px;
+  .jspVerticalBar
+    width: 25px;
+    background: none;
+    padding 0px 8px 0px 8px;
+    border-left 1px solid #e5e5e5
+  .jspScrollable
+    outline none
+    .b-popup-cart__head
+      border-right none
+      margin-right 13px
+    .b-popup-cart__content
+      border-right none
+      margin-right 0px
+      padding-right 20px
+.b-popu-card_cart
+  width 429px
+  padding 0px
+.b-button_grey
+  background #d0d0d0
+  color black
+  &:hover 
+    color white
+.cart__title 
+  font-size 20px
+.b-button_small
+  font-size 12px
+  height 20px
+  line-height @height
+.cart__top
+  padding 20px 0px 20px 30px
+  background white
+.b-popup-cart
+  max-height 720px
+  position relative
+.b-popup-cart__content-wrapper
+  max-height 720px
+.b-popup-cart__head
+  margin-right 25px
+  border-right 1px solid #e5e5e5
+.cart__top__col1
+  width 50% 
+  text-align right
+.b-popup-cart__content
+  padding 15px 0px 20px 30px
+  border-right 1px solid #e5e5e5
+  margin-right 25px
+.form__textarea_cart 
+  height 70px
+  font-size 13px
+  border-radius (5px)
+  padding 10px 20px
+  line-height 20px 
+  color black
+  margin 10px 0
+.add-by 
+  font-size 14px
+  color #767676
+  margin 10px 0 0 0
+.add-by__user
+  margin-left 5px
+  display inline-block
+  text-decoration: none
+.cart__title-item
+  font-size 13px
+.cart__cl-1
+  font-size 13px
+  display block
+.cart__img-wrapper
+  width 100%
+.cart__img
+  vertical-align top
+.cart__cl
+  width 50%
+.cart__prod-title
+  width 85%
+  .search__title 
+    font-size 20px
+.cart__cl-50
+  width 50%
+.cart__deliv
+  margin-top 10px
+  padding-left 10px
+.b-button_show_small
+  font-size 14px
+  padding 6px 10px 5px 10px
+  &:after
+    transform: rotateZ(135deg)
+.b-cont__in_cart
+  &:before 
+    content ''
+    sprite($sprite-com)
+    display inline-block
+    margin-right 5px
+.cart-com-buttons
+  button 
+    margin-right 5px
+.cart__comments_span 
+  font-size 14px
+  display block
+  line-height 20px
+  &:first-child
+    color #767676
+.cart__comments
+  margin-top 10px
+.cart__item
+  border-bottom 1px solid #e5e5e5
+  &:hover 
+    border-bottom 1px solid transparent
+.cart-discount 
+  color #777777
+  font-size 14px 
+  text-decoration line-through
+  display block
+  line-height 3px
+.b-product-preview__count
+  width 30%
+  margin-left 20px
+.b-button__del
+  font-size 14px
+  color #777
+  margin-left 16px
+  vertical-align middle
+  &:before 
+    content ''
+    sprite($sprite-c-close)
+    display inline-block 
+    vertical-align middle
+    margin 0 5px
+.check__back
+  font-size 14px
+  color black
+  text-decoration underline
+  &:before 
+    content ''
+    sprite($sprite-back)
+    display inline-block 
+    vertical-align middle
+    margin-right 5px
+.check__title
+  font-size 36px
+  font-family fontHelveticaThin
+  margin 25px 0
+.check__total
+  font-size 20px
+  span 
+    font-size 13px
+.check__total-items
+  margin-bottom 25px
+.check__friends
+  margin-bottom 30px
+  line-height 23px
+.b-button_check
+  &:before
+    content ''
+    sprite($sprite-ok)
+    display inline-block 
+    vertical-align middle
+    margin-right 6px
+    position relative 
+    top -2px
+.b-button_big 
+  height 50px
+  line-height @height
+.b-popu-card_check
+  width 315px
+  padding: 40px 0px 50px 50px;
+  &:after 
+    content ''
+    background url(../images/bug.png)
+    width 100%
+    height 4px
+    display block
+    position absolute
+    bottom -4px 
+    left 0px
+.check-rub
+  display inline-block
+  margin-left 5px
+.b-popu-card_friends
+  padding 0px
+  width 430px
+  .b-popup-cart__head
+    width 100%
+    border none 
+    margin 0
+    padding 0
+  .b-products-block-top
+    width 100%
+    padding-left 20px
+    padding-top: 25px;
+    padding-bottom: 28px;
+  .search__title
+    font-size 16px
+    display inline-block
+  .cart__prod-title
+    width 100%
+.invite__link
+  display inline-block
+  text-align right
+  width 47%
+  span 
+    background white
+    border-radius (20px)
+    color #434343
+    font-size 12px
+    padding 2px 10px
+.b-button_close
+  sprite($sprite-c-close)
+  position relative 
+  top -2px
+  vertical-align middle
+  margin 0 10px
+.friends__table
+  padding 20px 18px 30px 18px
+  line-height 30px
+  table
+    width 100%
+  td:first-child
+    width 35px
+.online
+  color c-green
+  font-size 11px
+.offline 
+  color #767676
+  font-size 11px
+.friend__connected
+  font-size 24px
+  font-family fontHelveticaThin
+  padding 20px 0px
+  margin 0 30px
+  border-bottom 1px solid #e5e5e5
+.connected
+  sprite($sprite-connected)
+.connected-to-cart 
+  width 80%
+  padding-left 30px
+.b-product-preview__pic img
+  width 100%
+.b-popu-card_interval
+  padding 0px
+  width 498px
+  .b-popup-cart__head
+    width 100%
+    border none 
+    margin 0
+    padding 0
+  .b-products-block-top
+    width 100%
+    padding-bottom 26px
+    padding-top 24px
+  .search__title
+    font-size 24px
+    padding-left 15px
+.interval__img-wrapper
+  padding 40px 0
+  text-align center
+.interval__img
+  padding 13px 18px  
+  border 1px solid #e5e5e5
+  display inline-block
+  img 
+    max-width 100%
+.interval__table
+  padding 0px 15px 40px 25px
+  line-height 30px
+  table 
+    width 100%
+    font-size 14px
+.interval__price 
+  color #767676
+.interval__date
+  border-radius (12px)
+  padding 3px 10px
+  text-decoration: none
+  &:before 
+    content ''
+    height 12px
+    width @height
+    border-radius (50%)
+    background #EFEAEA
+    display inline-block
+    vertical-align: middle
+    margin-right 10px
+    position relative 
+    top -1px
+  &:hover 
+    background c-orange
+.interval__time
+  padding-right 20px
+.b-popu-card_intervals
+  padding 0px
+  width 645px
+  .b-popup-cart__head
+    width 100%
+    border none 
+    margin 0
+    padding 0
+  .b-products-block-top
+    width 100%
+    padding-bottom 26px
+    padding-top 24px
+  .search__title
+    font-size 24px
+    padding-left 15px
+.intervals__coll
+  width 46%
+  &:first-child
+    margin-right 7%
+.interval__img-100
+  width 100%
+.intervals__content
+  padding 0 35px 30px 40px
+.intervals__time
+  font-size 14px
+  span:last-child
+    color #767676
+    display block
+.intervals__price
+  font-size 23px
+  background #f0efec
+  display inline-block
+  border-radius (25px)
+  padding 3px 10px
+  font-family fontHelveticaThin
+  width 35%
+  text-align center
+.free__price
+  font-size 14px
+  position relative 
+  top -3px
+.intervals__time
+  width 65%
+.intervals 
+  margin-bottom 13px
+.intervals__all
+  color #767676
+  font-size 14px
+.b-popu-card_accepted
+  width 430px
+  padding 0px
+  .b-popup-cart__head
+    width 100%
+    border none 
+    margin 0
+    padding 0
+  .b-products-block-top
+    width 100%
+    padding-bottom 60px
+    padding-top 60px
+  .search__title
+    font-size 24px
+    padding-left 15px
+  .cart__prod-title
+    width 100%
+.icon-a
+  sprite($sprite-a1)
+  margin 0 auto
+.icon-b
+  sprite($sprite-a2)
+  margin 0 auto
+.icon-c
+  sprite($sprite-a3)
+  margin 0 auto
+.icon-d
+  sprite($sprite-a4)
+  margin 0 auto
+.icon-e
+  sprite($sprite-a5)
+  margin 0 auto
+.accepted__title 
+  font-size 24px
+  border-bottom 1px solid #e5e5e5
+  margin 0 0 15px 0
+  padding 0 0 10px 0
+  position relative
+  &:after 
+    content ''
+    display block
+    position absolute
+    width 20px 
+    height 1px 
+    background white
+    right 0px
+    bottom -1px
+.accepted__desc
+  font-size 14px
+.accepted__content
+  padding 30px 40px 50px 40px
+  .b-button_check
+    &:before 
+      top 0px
+      left -4px
+.accepted__wrapper
+  padding-left 20px
+.form__input_accepted
+  font-size 14px 
+  padding 7px 20px
+  margin 15px 0 10px 0
+  width: 100%;
+  background: #f0efec;
+  border-radius: 30px
+  display block
+.accepted__phone
+  font-size 24px
+  display block
+  margin-top 5px
+.form__wrapper
+  background #f0efec
+  border-radius 20px
+  margin 15px 0 20px 0
+  .b-header-search__left
+    width 10%
+    padding 0px
+    &:after 
+      right 10px
+  .b-header-search__center
+    width 71%
+.accepted__input
+  border none
+  background #f0efec
+  padding 10px 0
+.b-button__close-popup
+  sprite($sprite-c-popup)
+  position absolute
+  right -40px
+  top 0px
+.b-popu-card_recovery
+  width 430px
+  padding 0px
+  .cart__prod-title
+    width 75px
+    margin 0 20px 0 25px
+    display inline-block
+    vertical-align: middle
+    text-align left
+  .recovery__title
+    width 50%
+    display inline-block
+    vertical-align: middle
+  .accepted__content
+    padding-bottom 22px
+  .b-popup-cart__head
+    width 100%
+    border none 
+    margin 0
+    padding 0
+  .b-products-block-top
+    width 100%
+    padding-bottom 20px
+    padding-top 20px
+  .search__title
+    font-size 24px
+    padding-left 15px
+.mail__example
+  font-size 14px 
+  padding-left 20px
+  color #767676
+  margin 0 0 10px 0
+  display block
+.accepetd__fotter
+  background #f0efec
+  text-align center
+  font-size 13px
+  padding 30px 0
+  color #767676
+.recovery__title
+  font-size 25px
+.b-popu-card_recovery_authorise
+  width 642px
+.forget
+  font-size 13px
+  margin-left 117px
+.rec__password
+  span 
+    display inline-block
+    margin 0px
+.accepetd__col
+  display inline-block
+  vertical-align top
+.accepted__60
+  width 60%
+.accepted__40
+  width 40%
+  padding-left 30px
+  span 
+    font-size 13px
+    color #767676
+.socials__login
+  padding 0px 
+.socials__login__item
+  margin 0 0 12px 0
+  &:first-child .socials__login__link
+    sprite($sprite-soc6)
+    display block
+  &:nth-child(2) .socials__login__link
+    sprite($sprite-soc7)
+    display block
+  &:last-child .socials__login__link
+    sprite($sprite-soc8)
+    display block
+.b-product-textarea
+.cart-com-buttons
+  display none
+.b-product-preview.open
+  .b-product-textarea
+  .cart-com-buttons
+    display block

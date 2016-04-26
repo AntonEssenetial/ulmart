@@ -1,0 +1,435 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-popup-wrapper
+          .b-popup.b-popup-card
+            button.b-popup__close
+            .b-popup__products.b-ib-wrapper
+              .b-popup__row
+                .b-popup__col_1.b-ib
+                  ul.big__rate
+                    li.big__rate__item.big__rate_active
+                      a(href="").big__rate__link
+                    li.big__rate__item.big__rate_active
+                      a(href="").big__rate__link
+                    li.big__rate__item.big__rate_active
+                      a(href="").big__rate__link
+                    li.big__rate__item
+                      a(href="").big__rate__link
+                    li.big__rate__item
+                      a(href="").big__rate__link
+                  .b-prod__img
+                    img(src="images/prod.jpg", alt="")
+                  .favourite__print
+                    a(href="").favourite В избранное
+                    a(href="").print.print__sup Пжаловаться 
+                .b-popup__col_2.b-ib
+                  .b-popup-product__wrapper
+                    ul.b-bread
+                      li.bread__list
+                        a.bread__item(href="") Главная
+                      li.bread__list
+                        a.bread__item(href="") Продукты
+                      li.bread__list
+                        a.bread__item(href="") Вост кухня
+                      li.bread__list Кабачки
+                    h1.popup__h1 Молоко кокосовое Suzi-Wan 200мл
+                    .b-popup__descr Италия. Помидоры Madama Oliva сушеные в масле с каперсами и прованскими травами.
+                    .b-product-preview__price.b-ib.b-popup_price
+                      | 258 <span class="b-rouble">&#8381;</span>
+                    .b-product-preview__buy.b-ib.b-popup_preview
+                      form(action="")
+                        .b-product-preview__count.b-ib.b-product-preview__count_popup
+                          input(type="text" value='6').b-product-preview__input.b-product-preview_popup
+                          button.b-button.b-button_plus.b-button_plus_popup +
+                          button.b-button.b-button_minus.b-button_minus_popup –
+                        .b-product-preview__incart.b-product-preview__incart_popup.b-ib
+                          button(type="submit").b-button.b-button_green.b-button_popup В корзину
+                    ul.b-popup-lists
+                      li.lists__element
+                        span.lists__item Состав: сушеные помидоры, соль, подсолнечное масло, каперсы, прованские травы, винный уксус, подкислитель: лимонная кислота (Е334).Пищевая ценность на 100мл продукта: 
+                      li.lists__element
+                        span.lists__item Пищевая ценность на 100мл продукта: жиры 4,4г, белки 3,0г, углеводы 4,7г, клетчатка 0г. Энергетическая ценность 70 ккал.
+                      li.lists__element
+                        span.lists__item Хранить в сухом прохладном месте вдали от источников тепла. Температура хранения не выше +30'C. Открытую упаковку хранить в холодильнике не более 5 дней.Срок годности 24 месяца.
+              .b-popup__slider
+                .b-same__wrapper
+                  .b-same__products.js-tabs(data-tabs-wrapper="#mainTabs")
+                    button.button__tab.js-tab.active(data-tab='#tab-1') С этим товаром покупают
+                    button.button__tab.js-tab(data-tab='#tab-2') Похожие товары
+                .b-products-block-tabs-content.b-tabs-wrapper.b-ib-wrapper#mainTabs
+                  .b-products-block-tabs-content__item.b-ib-wrapper.b-tabs-content.js-tab-content.active#tab-1
+                    .b-products-slider
+                      .b-products-slider__slider.js-products-slider-5.b-products-slider__popup
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-2.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-3.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                  .b-products-block-tabs-content__item.b-ib-wrapper.b-tabs-content.js-tab-content#tab-2
+                    .b-products-slider
+                      .b-products-slider__slider.js-products-slider-5.b-products-slider__popup
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-2.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-3.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__count.b-ib
+                                  input(type="text" value='1').b-product-preview__input
+                                  button.b-button.b-button_plus +
+                                  button.b-button.b-button_minus –
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+          .b-popup.b-popup-card
+            .b-popup__products.b-ib-wrapper
+              .b-blog__form-title.b-blog_popup Отзывы о продукте
+              .b-products-slider.b-comment-slider
+                .b-products-slider__slider.js-products-slider-6
+                  .b-products-slider__item.js-products-slider-item
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис: "Отличный магазин" 6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте само
+                  .b-products-slider__item.js-products-slider-item
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис: "Отличный магазин" 6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте само
+                  .b-products-slider__item.js-products-slider-item
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис: "Отличный магазин" 6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте само
+                  .b-products-slider__item.js-products-slider-item
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис: "Отличный магазин" 6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте само
+                  .b-products-slider__item.js-products-slider-item
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис: "Отличный магазин" 6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте само
+                  .b-products-slider__item.js-products-slider-item
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис: "Отличный магазин" 6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте само
+                  .b-products-slider__item.js-products-slider-item
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис: "Отличный магазин" 6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте само
+                  .b-products-slider__item.js-products-slider-item
+                    .b-blog__user-comment
+                      .b-blog__name.b-ib-wrapper
+                        .col__1.b-ib 
+                          span.autor__name Купер Денис: "Отличный магазин" 6 сентября 2015
+                        .col__2.b-ib 
+                          ul.rate.small__rate
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item.active__star
+                              a(href="").small__rate__link
+                            li.small__rate__item
+                              a(href="").small__rate__link
+                      .b-blag__comment-area
+                        p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
+                        p.comment__text <span>Недостатки:</span> Не было
+                        p.comment__text <span>Комментарий:</span> Вежливый менеджер по телефону забронировал мне товар ,sennheiser mx 170 две штуки , на следующий день товар уже был в пункте само
+        include
+    include scripts.jade
