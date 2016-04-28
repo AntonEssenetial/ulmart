@@ -1,0 +1,136 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-lk-wrapper
+          .b-lk__content
+            .lk__col1
+              .lk__title Личный кабинет
+              .lk__menu
+                a(href="lk.html").lk__link
+                  span.lk__item
+                  | Профиль
+                a(href="lk-2.html").lk__link.lk__link_active
+                  span.lk__item
+                  | Адреса
+                a(href="lk-3.html").lk__link
+                  span.lk__item
+                  | Скидочные купоны
+                a(href="lk-4.html").lk__link
+                  span.lk__item
+                  | История заказов
+                a(href="lk-5.html").lk__link
+                  span.lk__item
+                  | Избранное
+                a(href="lk-6.html").lk__link
+                  span.lk__item
+                  | Уведомления
+                a(href="lk-7.html").lk__link
+                  span.lk__item
+                  | Подписка
+            .lk__col2
+              .lk__history
+                .lk__history__col1
+                  span.history__order1 Заказ №3454-52, 23 сентября, 15:34                    
+                  span.history__order2 Индекс 420080, ул. Пушкина, дом 15, этаж 5, квартира 23
+                  .favourite__print
+                    a(href="").repeat Повторить
+                    a(href="").favourite Сохранить
+                    a(href="").print Распечатать
+                .lk__history__col2
+                  .span.history__total Сумма 
+                  .span.history__sub 258&#8381;
+                .lk__history__col3
+                  button.b-button.b-button_remove Заказ <br> отменен
+              .lk__history-items
+                .lk__items__col1
+                  .lk__history-item
+                    .b-products-slider__item
+                      .history__items.b-ib-wrapper
+                        .b-product__count.b-ib 
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.height-auto.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib.height-auto
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.d-block.b-ib
+                            .b-product-preview__price.b-ib.cart-discount
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-item__count.b-ib 1шт.
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                  .lk__history-item
+                    .b-products-slider__item
+                      .history__items.b-ib-wrapper
+                        .b-product__count.b-ib 
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.height-auto.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib.height-auto
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.d-block.b-ib
+                            .b-product-preview__price.b-ib.cart-discount
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-item__count.b-ib 1шт.
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                  .lk__history-item
+                    .b-products-slider__item
+                      .history__items.b-ib-wrapper
+                        .b-product__count.b-ib 
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.height-auto.b-ib
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib.height-auto
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.d-block.b-ib
+                            .b-product-preview__price.b-ib.cart-discount
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-item__count.b-ib 1шт.
+                          .cart__comments
+                            span.cart__comments_span Комментарий:
+                            span.cart__comments_span Только сегодняшнее! Не вчерашнее.
+                .lk__items__col2
+                  .b-popu-card_check.b-popup-chekc_lk
+                    .b-popup-check
+                      .check__title Ваш заказ
+                      .check__total-items
+                        .check__total Итого: 
+                          span 3 товара на сумму 2 650
+                          span.check-rub &#8381
+                      .check__friends
+                        .check__total Вы: 
+                          span 3 товара на сумму 2 650
+                          span.check-rub &#8381
+                        .check__total Алексей: 
+                          span 3 товара на сумму 2 650
+                          span.check-rub &#8381
+                        .check__total Олег: 
+                          span 3 товара на сумму 2 650
+                          span.check-rub &#8381
+                      button.b-button.b-button_green.b-button_check.b-button_big  Оформить заказ
+        include footer.jade
+    include scripts.jade

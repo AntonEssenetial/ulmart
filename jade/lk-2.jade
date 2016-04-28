@@ -1,0 +1,78 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-lk-wrapper
+          .b-lk__content
+            .lk__col1
+              .lk__title Личный кабинет
+              .lk__menu
+                a(href="lk.html").lk__link
+                  span.lk__item
+                  | Профиль
+                a(href="lk-2.html").lk__link.lk__link_active
+                  span.lk__item
+                  | Адреса
+                a(href="lk-3.html").lk__link
+                  span.lk__item
+                  | Скидочные купоны
+                a(href="lk-4.html").lk__link
+                  span.lk__item
+                  | История заказов
+                a(href="lk-5.html").lk__link
+                  span.lk__item
+                  | Избранное
+                a(href="lk-6.html").lk__link
+                  span.lk__item
+                  | Уведомления
+                a(href="lk-7.html").lk__link
+                  span.lk__item
+                  | Подписка
+            .lk__col2
+              .lk__title.lk__title_reset Ваши адреса:
+              .lk__address-wrapper
+                .lk__address
+                  button.b-button.b-button__edit
+                  button.b-button.b-button__remove
+                  .lk__input1 Домой 
+                  .lk__input2 Индекс 420080, ул. Пушкина, дом 15, этаж 5, квартира 23
+                .lk__address
+                  button.b-button.b-button__edit
+                  button.b-button.b-button__remove
+                  .lk__input1 Домой 
+                  .lk__input2 Индекс 420080, ул. Пушкина, дом 15, этаж 5, квартира 23
+                .lk__address
+                  button.b-button.b-button__edit
+                  button.b-button.b-button__remove
+                  .lk__input1 Домой 
+                  .lk__input2 Индекс 420080, ул. Пушкина, дом 15, этаж 5, квартира 23
+              .lk__title.lk__title_reset Добавить адресс:
+              .lk__add-address
+                form(action="")
+                  span.lk__form-descr Все поля обязательны для заполнения
+                  label.form__label 
+                    span.span__label Улица
+                    input(type="text",placeholder='Улица').form__input.form__input_middle
+                  .form__col1
+                    label.form__label 
+                      span.span__label Дом
+                      input(type="text",placeholder='Дом').form__input.form__input_short
+                    label.form__label 
+                      span.span__label Квартира
+                      input(type="text",placeholder='Квартира').form__input.form__input_short
+                  .form__col1
+                    label.form__label 
+                      span.span__label.span__label_short Этаж
+                      input(type="text",placeholder='Этаж').form__input.form__input_short
+                    label.form__label 
+                      span.span__label.span__label_short Индекс
+                      input(type="text",placeholder='Индекс').form__input.form__input_short
+                  label.form__label 
+                    span.span__label Название
+                    input(type="text",placeholder='Название').form__input.form__input_middle.form__input_tooltip
+                  button.b-button.b-button_check.b-button_green.b-button_big Сохранить адрес
+        include footer.jade
+    include scripts.jade

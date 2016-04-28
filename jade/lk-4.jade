@@ -1,0 +1,74 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-lk-wrapper
+          .b-lk__content
+            .lk__col1
+              .lk__title Личный кабинет
+              .lk__menu
+                a(href="lk.html").lk__link
+                  span.lk__item
+                  | Профиль
+                a(href="lk-2.html").lk__link.lk__link_active
+                  span.lk__item
+                  | Адреса
+                a(href="lk-3.html").lk__link
+                  span.lk__item
+                  | Скидочные купоны
+                a(href="lk-4.html").lk__link
+                  span.lk__item
+                  | История заказов
+                a(href="lk-5.html").lk__link
+                  span.lk__item
+                  | Избранное
+                a(href="lk-6.html").lk__link
+                  span.lk__item
+                  | Уведомления
+                a(href="lk-7.html").lk__link
+                  span.lk__item
+                  | Подписка
+            .lk__col2
+              .lk__title.lk__title_reset Ваши заказы
+              .lk__orders
+                .lk__order
+                  .lk__history__col1
+                    a(href="lk-8.html").history__order1 Заказ №3454-52, 23 сентября, 15:34                    
+                    span.history__order2 Индекс 420080, ул. Пушкина, дом 15, этаж 5, квартира 23
+                  .lk__history__col2
+                    .span.history__total Сумма 
+                    .span.history__sub 258&#8381;
+                  .lk__history__col3
+                    button.b-button.b-button_remove Заказ <br> отменен
+                .lk__order
+                  .lk__history__col1
+                    a(href="lk-8.html").history__order1 Заказ №3454-52, 23 сентября, 15:34                    
+                    span.history__order2 Индекс 420080, ул. Пушкина, дом 15, этаж 5, квартира 23
+                  .lk__history__col2
+                    .span.history__total Сумма 
+                    .span.history__sub 258&#8381;
+                  .lk__history__col3
+                    button.b-button.b-button_remove.b-button_red Заказ <br> ожидается
+                .lk__order
+                  .lk__history__col1
+                    a(href="lk-8.html").history__order1 Заказ №3454-52, 23 сентября, 15:34                    
+                    span.history__order2 Индекс 420080, ул. Пушкина, дом 15, этаж 5, квартира 23
+                  .lk__history__col2
+                    .span.history__total Сумма 
+                    .span.history__sub 258&#8381;
+                  .lk__history__col3
+                    button.b-button.b-button_remove.b-button_gr Заказ <br> доставлен
+                .lk__order
+                  .lk__history__col1
+                    a(href="lk-8.html").history__order1 Заказ №3454-52, 23 сентября, 15:34                    
+                    span.history__order2 Индекс 420080, ул. Пушкина, дом 15, этаж 5, квартира 23
+                  .lk__history__col2
+                    .span.history__total Сумма 
+                    .span.history__sub 258&#8381;
+                  .lk__history__col3
+                    button.b-button.b-button_remove.b-button_red Заказ <br> ожидается
+        include footer.jade
+    include scripts.jade

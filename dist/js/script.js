@@ -131,3 +131,19 @@
       productSlider.slick(productSliderOptions);
   }
 
+// Height detect funciton
+  function heightDetect(){
+    $('.lk__col1').css( 
+      'height', $('.b-lk__content').height()
+    );
+  };
+  function widthDetect(){
+    $('.slick-list').css( 
+      'width', $('.b-popup__slider').width()
+    );
+  };
+  $('button').click(function(event) {
+   widthDetect();
+  });
+  widthDetect();
+  heightDetect();

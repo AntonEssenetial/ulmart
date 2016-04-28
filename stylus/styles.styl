@@ -3233,21 +3233,29 @@ textarea
   display block
 .small__rate__item
   display inline-block
-.active__star a
+.active__star span
   sprite($sprite-small-star-active)
 .small__rate__link:hover 
-  sprite($sprite-small-star-active) 
+  cursor default
+//   sprite($sprite-small-star-active) 
 .favourite__print
   margin 20px 0
 .b-blog__row .favourite__print
   position relative 
 .favourite
 .print 
+.repeat
   font-size 14px 
   color black
   display inline-block
   text-decoration none
   margin-right 10px
+.repeat:before
+  sprite($sprite-repeat)
+  content ''
+  display inline-block
+  vertical-align: middle
+  margin-right 5px
 .favourite:before
   sprite($sprite-print1)
   content ''
@@ -3280,7 +3288,14 @@ textarea
   margin 20px 0 0 0
 .b-blog__row .socials
   position relative
+.b-header-popup__filter_catalog div 
+.b-header-popup__filter_catalog input
+.b-header-popup__filter_catalog select
+  cursor pointer
 .js-custom-select2
+  input:hover
+  input:focus 
+    curosor pointer !important
   .selectize-input input
     color: transparent !important;
   .selectize-input input
@@ -3305,6 +3320,27 @@ textarea
 .for__input_rec
   width 69%
   vertical-align middle
+.big__rate:not(old) > label:hover:before,
+.big__rate:not(old) > label:hover ~ label:before,
+.big__rate:not(:hover) > :checked ~ label:before
+  opacity : 1
+  cursor pointer
+.big__rate:not(old) > label:before
+  content '';
+  display block;
+  opacity  0;
+  transition opacity 0.2s linear;
+  sprite($sprite-big-star-active)
+.big__rate:not(old) > label
+  display: block;
+  float: right;
+  position: relative;
+  sprite($sprite-big-star)
+.big__rate:not(old) > input
+  margin-right : -100%;
+  opacity      : 0;
+.big__rate 
+  width 135px
 .big__rate__item
   display inline-block
   &:hover 
@@ -3490,7 +3526,7 @@ textarea
     display inline-block
     vertical-align middle
     margin 10px 0
-.b-product-preview__incart
+.b-product-preview__incart_popup
   width 53%
 .b-popup__row 
   &:after 
@@ -3577,6 +3613,7 @@ textarea
   border-radius(30px)
 .b-popup__slider
   padding 45px 0 0 0
+  width: 777px;
 .button__tab
   font-size 18px
   border none 
@@ -3584,6 +3621,7 @@ textarea
   outline none
   border-radius(30px)
   padding: 17px
+  trs()
 .button__tab.active 
   background c-green
   color white
@@ -3595,6 +3633,7 @@ textarea
 .cart__col-2 
   width 77%
   margin-left 5%
+  position relative
 .b-product-preview_border-cart
   padding 20px
   width 100%
@@ -3646,6 +3685,7 @@ textarea
   color black
   &:hover 
     color white
+    background red
 .cart__title 
   font-size 20px
 .b-button_small
@@ -3738,7 +3778,7 @@ textarea
   text-decoration line-through
   display block
   line-height 3px
-.b-product-preview__count
+.b-product-preview__count_cart
   width 30%
   margin-left 20px
 .b-button__del
@@ -3896,8 +3936,10 @@ textarea
   color #767676
 .interval__date
   border-radius (12px)
-  padding 3px 10px
+  padding 0px 10px
   text-decoration: none
+  height 25px
+  line-height @height
   &:before 
     content ''
     height 12px
@@ -4131,3 +4173,299 @@ textarea
   .b-product-textarea
   .cart-com-buttons
     display block
+// Lk
+.lk__title
+  font-size 36px
+  font-family fontHelveticaThin
+  padding 40px 30px 30px 30px
+.b-lk__content
+  border 1px solid #e6e6e6
+  margin 30px 0 0 0
+.lk__col2
+  width 72%
+  display inline-block
+  vertical-align: top
+  padding 0 0 60px 70px
+.lk__title_reset 
+  padding-left 0px
+.lk__col1
+  padding-bottom 100px
+  display inline-block
+  vertical-align: top
+  width 28%
+  background linear-gradient(to right,  #f8be00 0%,#fbc902 30%,#fcd000 65%,#FFC800 100%);
+.lk__item 
+  vertical-align middle
+  margin 0 20px 0 30px
+  color white
+.lk__link_active
+  background #353535
+  color white !important
+.lk__link 
+  display block
+  font-size 18px
+  text-decoration none
+  color black
+  padding 10px 0
+  &:hover 
+    color white 
+    background #353535
+  &:first-child .lk__item
+    sprite($sprite-lk)
+    display inline-block
+  &:nth-child(2) .lk__item
+    sprite($sprite-lk2)
+    display inline-block
+  &:nth-child(3) .lk__item
+    sprite($sprite-lk3)
+    display inline-block
+  &:nth-child(4) .lk__item
+    sprite($sprite-lk4)
+    display inline-block
+  &:nth-child(5) .lk__item
+    sprite($sprite-lk5)
+    display inline-block
+  &:nth-child(6) .lk__item
+    sprite($sprite-lk6)
+    display inline-block
+  &:last-child .lk__item
+    sprite($sprite-lk7)
+    display inline-block
+.b-button__edit 
+  sprite($sprite-lkb2)
+  margin-right 5px
+  vertical-align middle
+.b-button__remove 
+  sprite($sprite-lkb1)
+  margin-right 15px
+  position relative 
+  top -2px
+.lk__input1 
+  display inline-block
+  width 22%
+  font-size 18px
+.lk__input2
+  display inline-block 
+  font-size 15px 
+  color #767676
+  width 70%
+.lk__address
+  margin 0 0 30px 0
+  &:last-child
+    margin 0
+.form__col1
+  display inline-block
+  width 36%
+.form__input_short
+  width 134px
+  display inline-block
+.form__label
+  display block
+  margin 0 0 15px 0
+.span__label
+  width 125px
+  display inline-block
+.form__input_middle
+  width 280px
+.span__label_short 
+  width 90px
+.lk__form-descr
+  color #898989
+  font-size 13px
+  display inline-block
+  margin-bottom 15px
+  margin-left 18%
+.lk__add-address
+  .b-button 
+    margin-left 126px
+    width 280px
+    text-align left
+.form__input_tooltip
+  &:after
+    content ''
+    sprite($sprite-ques)
+    display inline-block
+.lk__history
+  padding 80px 0 20px 0
+  line-height 22px
+  width 92%
+.history__order1
+  font-size 18px
+  display block
+  text-decoration none
+.history__order2
+  font-size 15px 
+  color #898989
+  display block
+.lk__history__col1 
+  width 70%
+  display inline-block
+  vertical-align top
+.lk__history__col2
+  width 10%
+  display inline-block
+  vertical-align top
+.lk__history__col3
+  padding-left 83px
+  width 20%
+  display inline-block
+  vertical-align top
+  text-align center
+.history__sub
+  font-size 25px
+  font-family fontHelveticaThin
+.history__total
+  font-size 14px
+.b-button_remove 
+  color #898989
+  font-size 14px 
+  text-align left
+  &:before
+    content ''
+    sprite($sprite-remove)
+    display inline-block
+    margin-right 15px
+    position absolute
+    left -25px
+    top 16px
+.lk__items__col2
+  width 50%
+  display inline-block
+  vertical-align: top
+.lk__items__col1
+  width 50%
+  display inline-block
+  vertical-align: top
+  border-top 1px solid #e5e5e5
+.height-auto
+  height auto
+  padding 0px
+.d-block
+  display block
+.b-item__count
+  font-size 24px
+  font-family fontHelveticaThin
+  margin-left 24px
+.history__items
+  padding 30px 0
+.lk__history-item
+  border-bottom 1px solid #e5e5e5
+  &:last-child 
+    border none
+.b-popup-chekc_lk
+  box-shadow: 0 2px 11px rgba(0,0,0,0.18);
+  position relative
+  margin-left 60px
+  padding-top 12px
+.lk__orders
+  border-top 1px solid #e5e5e5
+  width 93%
+.lk__order
+  border-bottom 1px solid #e5e5e5
+  padding 35px 0px 35px 0
+  line-height 22px
+  &:last-child
+    border none
+.b-button_gr
+  color c-green
+  &:before 
+    sprite($sprite-gr)
+.b-button_red
+  color #ed1c24
+  &:before 
+    sprite($sprite-red)
+.favourite1
+  display block
+.lk__list-title
+  font-size 24px
+  font-family fontHelveticaThin
+  display inline-block
+  margin 45px 0 20px 0
+.form__input_m
+  margin-right 10px
+.lk__custom-lists
+  padding 0px
+.lk__custom-lists
+  ul
+    padding 0px
+    margin-bottom 0px
+.form__list
+  margin-bottom 30px
+.lk__lists__link
+  font-size 18px
+.custom-num
+  font-size 12px
+  width 25px 
+  height @width
+  line-height @width
+  background c-orange
+  border-radius(50%)
+  display inline-block
+  text-align center
+  vertical-align: middle
+  margin-right 20px
+.lk__lists__item
+  line-height 35px
+.lk__select__link
+  font-size 14px
+  margin-right 10px
+  &:first-child
+    text-decoration none
+    &:before 
+      content ''
+      width 15px
+      height 15px 
+      background #f3f2f0
+      display inline-block
+      vertical-align: middle
+      border-radius(50%)
+      margin-right 10px
+.b-filter__result_reset
+  margin-left 0px 
+.total-sum__items 
+  font-size 14px 
+  color #898989
+  padding-left 20px
+  span 
+    font-size 18px
+    font-family fontHelveticaThin
+.fav-item
+  width 46%
+  margin-right 3.5%
+.b-product-preview__count_short
+  width: 24%;
+  margin-left: 10px;
+.fav-item
+  display inline-block
+  .b-product-preview_border-cart
+    padding: 40px 20px;
+  .b-product__star
+    right 10px 
+    top 10px
+  .b-count__in
+    padding 2px 18px
+  .prod__star
+    sprite($sprite-m-star)
+    display block
+    opacity 1
+  .b-product-preview_border-cart:after
+    display none
+  .cart__col-1
+    width 14%
+  .cart__col-2
+    margin-left 11%
+    width 72%
+.separ
+  height 1px
+  width 93%
+  background #e5e5e5
+  border none
+  margin-bottom 3px
+body .fav__checkbox
+  display inline-block
+  margin-right 10px
+  position absolute
+  left -20px
+  top 1px
+.lk__custom-lists_m
+  margin 0px

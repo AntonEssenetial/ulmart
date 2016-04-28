@@ -1,0 +1,197 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-lk-wrapper
+          .b-lk__content
+            .lk__col1
+              .lk__title Личный кабинет
+              .lk__menu
+                a(href="lk.html").lk__link
+                  span.lk__item
+                  | Профиль
+                a(href="lk-2.html").lk__link.lk__link_active
+                  span.lk__item
+                  | Адреса
+                a(href="lk-3.html").lk__link
+                  span.lk__item
+                  | Скидочные купоны
+                a(href="lk-4.html").lk__link
+                  span.lk__item
+                  | История заказов
+                a(href="lk-5.html").lk__link
+                  span.lk__item
+                  | Избранное
+                a(href="lk-6.html").lk__link
+                  span.lk__item
+                  | Уведомления
+                a(href="lk-7.html").lk__link
+                  span.lk__item
+                  | Подписка
+            .lk__col2
+              .lk__title.lk__title_reset Избранное
+              .lk__favourite
+                span.history__order1 Добавляйте понравившиеся вам товары в избранное.
+                span.history__order2 Создавайте списки, чтобы облегчить поиск товаров в избранном.
+              .lk__new-list
+                span.lk__list-title Создать новый список
+                .form__list
+                  form(action="")
+                    label.form__label 
+                      span.span__label.span__label_short Название
+                      input(type="text",placeholder='Название').form__input.form__input_middle.form__input_m
+                      button.b-button.b-button_green.b-button_big Создать список
+                .lk__custom-lists
+                  ul
+                    li.lk__lists__item
+                      span.custom-num 12
+                      a.lk__lists__link(href="lk-9.html") Корзинка с кабачками №1
+                    li.lk__lists__item
+                      span.custom-num 4
+                      a.lk__lists__link(href="lk-9.html") Корзинка с кабачками №2
+                span.lk__list-title Вне списка
+                .lk__select
+                  a(href="").lk__select__link Вне списка
+                  a(href="").lk__select__link Добавить в список
+                  a(href="").lk__select__link Удалить из избранного
+                .lk__filter
+                  .b-filter__result.b-filter__result_reset
+                    .b-header-popup__top-left.b-header-popup_catalog-left.b-ib
+                      .b-catalog__filter-left.b-ib Упорядочить
+                      .b-header-popup__filter.b-header-popup__filter_catalog.b-ib
+                        .b-header-popup__filter-select.b-header-popup__filter-select_catalog.b-ib
+                          select.b-custom-select.js-custom-select2
+                            option(selected="selected" value="Стандартно") Стандартно
+                            option(value="По дате") По дате
+                            option(value="По цене") По цене
+                    .lk__total-sum.b-ib
+                      button.b-button.b-button_green Положить все в корзину 
+                      .total-sum__items.b-ib 12 товаров на сумму 
+                        span 2 358&#8381
+                .lk__fav-items
+                  .fav-item
+                    hr.separ
+                    .b-products-slider__item
+                      .b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in 1шт. в корзине
+                        .b-product__disc 30%
+                        .b-product__star
+                          a(href="").prod__star
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib.height-auto
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib.height-auto
+                            input(type="checkbox").fav__checkbox
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-product-preview__count_short.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-ib
+                                button(type="submit").b-button.b-button_green В корзину
+                  .fav-item
+                    hr.separ
+                    .b-products-slider__item
+                      .b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in 1шт. в корзине
+                        .b-product__star
+                          a(href="").prod__star
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib.height-auto
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib.height-auto
+                            input(type="checkbox").fav__checkbox
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-product-preview__count_short.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-ib
+                                button(type="submit").b-button.b-button_green В корзину
+                  .fav-item
+                    hr.separ
+                    .b-products-slider__item
+                      .b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in 1шт. в корзине
+                        .b-product__star
+                          a(href="").prod__star
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib.height-auto
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib.height-auto
+                            input(type="checkbox").fav__checkbox
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-product-preview__count_short.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-ib
+                                button(type="submit").b-button.b-button_green В корзину
+                  .fav-item
+                    hr.separ
+                    .b-products-slider__item
+                      .b-product-preview.b-product-preview_border.b-product-preview_border-cart.b-ib-wrapper
+                        .b-product__count.b-ib 
+                          span.b-count__in 1шт. в корзине
+                        .b-product__star
+                          a(href="").prod__star
+                        .cart__col-1.b-ib
+                          .b-product-preview__pic.b-ib.height-auto
+                            a(href="")
+                              img(src="images/demo/product-preview-1.jpg" alt="")
+                        .cart__col-2.b-ib
+                          .b-product-preview__name.b-ib.height-auto
+                            input(type="checkbox").fav__checkbox
+                            a(href="")
+                              | Молоко кокосовое
+                              | Suzi-Wan 200мл
+                          .b-product-preview__buy.b-ib
+                            form(action="")
+                              .b-product-preview__price.b-ib.cart-discount
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__price.b-ib
+                                | 258 <span class="b-rouble">&#8381;</span>
+                              .b-product-preview__count.b-product-preview__count_cart.b-product-preview__count_short.b-ib
+                                input(type="text" value='1').b-product-preview__input
+                                button.b-button.b-button_plus +
+                                button.b-button.b-button_minus –
+                              .b-ib
+                                button(type="submit").b-button.b-button_green В корзину
+        include footer.jade
+    include scripts.jade

@@ -238,17 +238,17 @@ html(lang='ru')
               .b-rec__col__37.b-ib
                 .b-rec__descr 
                   .head__rate 
-                    ul.big__rate
-                      li.big__rate__item.big__rate_active
-                        a(href="").big__rate__link
-                      li.big__rate__item.big__rate_active
-                        a(href="").big__rate__link
-                      li.big__rate__item.big__rate_active
-                        a(href="").big__rate__link
-                      li.big__rate__item
-                        a(href="").big__rate__link
-                      li.big__rate__item
-                        a(href="").big__rate__link
+                    .big__rate
+                      input(type="radio", name="rating", value="5")#rating5
+                      label(for="rating5")
+                      input(type="radio", name="rating", value="4")#rating4
+                      label(for="rating4")
+                      input(type="radio", name="rating", value="3")#rating3
+                      label(for="rating3")
+                      input(type="radio", name="rating", value="2")#rating2
+                      label(for="rating2")
+                      input(type="radio", name="rating", value="1")#rating1
+                      label(for="rating1")
                     span.rate__text оценка пользователей
                   h1.rec__h1 Мидии в пивном соусе по-бельгийски
                   p.rec__text Баноффи — английский десерт Однажды меня угостили десертом, который невозможно было
@@ -295,15 +295,15 @@ html(lang='ru')
                         .col__2.b-ib 
                           ul.rate.small__rate
                             li.small__rate__item.active__star
-                              a(href="").small__rate__link
+                              span.small__rate__link
                             li.small__rate__item.active__star
-                              a(href="").small__rate__link
+                              span.small__rate__link
                             li.small__rate__item.active__star
-                              a(href="").small__rate__link
+                              span.small__rate__link
                             li.small__rate__item.active__star
-                              a(href="").small__rate__link
+                              span.small__rate__link
                             li.small__rate__item
-                              a(href="").small__rate__link
+                              span.small__rate__link
                       .b-blag__comment-area
                         p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
                         p.comment__text <span>Недостатки:</span> Не было
@@ -315,15 +315,15 @@ html(lang='ru')
                         .col__2.b-ib 
                           ul.rate.small__rate
                             li.small__rate__item.active__star
-                              a(href="").small__rate__link
-                            li.small__rate__item.active__star
-                              a(href="").small__rate__link
-                            li.small__rate__item.active__star
-                              a(href="").small__rate__link
+                              span.small__rate__link
                             li.small__rate__item
-                              a(href="").small__rate__link
+                              span.small__rate__link
                             li.small__rate__item
-                              a(href="").small__rate__link
+                              span.small__rate__link
+                            li.small__rate__item
+                              span.small__rate__link
+                            li.small__rate__item
+                              span.small__rate__link
                       .b-blag__comment-area
                         p.comment__text <span>Достоинства:</span> Пункт самовывоза находится в центре Москвы в 5 минутах ходьбы от метро , хорошее и быстрое обслуживание 
                         p.comment__text <span>Недостатки:</span> Не было
@@ -333,17 +333,17 @@ html(lang='ru')
                   input.form__input.for__input_rec(type="text", placeholder='Ваше имя')
                   .form__rate
                     .big__rate-wrap 
-                      ul.big__rate
-                        li.big__rate__item.big__rate_active
-                          a(href="").big__rate__link
-                        li.big__rate__item.big__rate_active
-                          a(href="").big__rate__link
-                        li.big__rate__item.big__rate_active
-                          a(href="").big__rate__link
-                        li.big__rate__item
-                          a(href="").big__rate__link
-                        li.big__rate__item
-                          a(href="").big__rate__link
+                      .big__rate
+                        input(type="radio", name="rating", value="5")#rating5
+                        label(for="rating5")
+                        input(type="radio", name="rating", value="4")#rating4
+                        label(for="rating4")
+                        input(type="radio", name="rating", value="3")#rating3
+                        label(for="rating3")
+                        input(type="radio", name="rating", value="2")#rating2
+                        label(for="rating2")
+                        input(type="radio", name="rating", value="1")#rating1
+                        label(for="rating1")
                       span.rate__text ваша оценка
                   textarea.form__textarea(name="message", placeholder='Ваш камментарий')
                   button.b-button.b-button_green Оставить комментарий
