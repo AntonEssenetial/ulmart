@@ -1990,6 +1990,19 @@ input[type="checkbox"]
     position absolute
     top 3px 
     left @top
+.filter__label_radio > i
+  width 25px
+  height @width
+  line-height @width 
+  text-align center
+.filter__label_radio > .filter__checkbox_radio:checked + i
+  trs()
+  &:after
+    height 7px 
+    width @height 
+    background black
+    border-radius (50%)
+    margin 5px
 // Price slider
 .slider__values
   font-size 13px
@@ -3299,9 +3312,8 @@ textarea
   .selectize-input input
     color: transparent !important;
   .selectize-input input
-    position: absolute !important;
-    top: -9999px;
-    left: -9999px;
+    opacity 0
+    visibility hidden
 .b-rec__col__63
   display inline-block
   width 63%
@@ -4280,6 +4292,10 @@ textarea
     margin-left 126px
     width 280px
     text-align left
+  .b-button_reset
+    margin 0px
+    width auto
+    margin-left 10px
 .form__input_tooltip
   &:after
     content ''
@@ -4469,3 +4485,83 @@ body .fav__checkbox
   top 1px
 .lk__custom-lists_m
   margin 0px
+.lk__m-left-none
+  margin-left 0
+.form__input_xs
+  width 70px
+  margin-right 10px
+.form__input_xs2
+  width 79px
+.b-header-popup__filter_lk
+  width 110px
+  background: #f0efec;
+  border: none;
+  padding: 15px 20px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  height 51px
+  color: #808080;
+  font-size 18px
+.lk__profile
+  .selectize-input
+    height 51px 
+    line-height @height 
+    padding 0px
+    font-size 18px
+  .b-header-popup__filter_lk
+    padding 0 20px
+    margin-right 10px
+  .b-header-popup__filter-select_catalog .selectize-input.full
+  .selectize-dropdown  
+    background: #f0efec;
+.form__label_ib
+  display inline-block
+.lk__date-rapper
+  display block
+.lk__avatar
+  padding 60px 0 30px 0
+.avator__img 
+  border-radius(50%)
+  width 130px
+  height @width
+.avator__title
+  font-size 36px
+  font-family fontHelveticaThin
+  span 
+    display block
+.avator__col2
+  padding-left 20px
+.change__avator
+  font-size 14px
+  margin-top 10px
+  display inline-block
+.filter__label_radio
+  margin 35px 0
+.lk__notify
+  padding-top 45px
+  .b-button_check
+    width 280px
+    text-align left
+.lk__add-address_coupon
+  padding-top 45px
+.lk__title
+  span 
+    color c-green
+    display inline-block 
+    margin-left 10px
+.lk__title_small
+  font-size 30px
+  margin-bottom 0px
+.subscribe__text
+  font-size 14px
+  line-height 23px
+  margin-top 0px
+.b-text
+  width 80%
+  margin-bottom 35px
+.sub-buttons
+  button 
+    margin-right 10px
+    padding-left 25px
+    padding-right 25px

@@ -138,7 +138,7 @@
     );
   };
   function widthDetect(){
-    $('.slick-list').css( 
+    $('.js-products-slider-5 .slick-list').css( 
       'width', $('.b-popup__slider').width()
     );
   };

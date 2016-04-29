@@ -1,0 +1,81 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-lk-wrapper
+          .b-lk__content
+            .lk__col1
+              .lk__title Личный кабинет
+              .lk__menu
+                a(href="lk.html").lk__link
+                  span.lk__item
+                  | Профиль
+                a(href="lk-2.html").lk__link.lk__link_active
+                  span.lk__item
+                  | Адреса
+                a(href="lk-3.html").lk__link
+                  span.lk__item
+                  | Скидочные купоны
+                a(href="lk-4.html").lk__link
+                  span.lk__item
+                  | История заказов
+                a(href="lk-5.html").lk__link
+                  span.lk__item
+                  | Избранное
+                a(href="lk-6.html").lk__link
+                  span.lk__item
+                  | Уведомления
+                a(href="lk-7.html").lk__link
+                  span.lk__item
+                  | Подписка
+            .lk__col2
+              .lk__notify
+                form(action="")
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(type="checkbox")
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order1 Присылать сообщения на E-mail      
+                      span.history__order2 Вы будете получать e-mail сообщения о проводимых акциях, промо-купонах и еще чем нибудь
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(type="checkbox")
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order1 Присылать сообщения на E-mail         
+                      span.history__order2 Вы будете получать e-mail сообщения о проводимых акциях, промо-купонах и еще чем нибудь
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(type="checkbox")
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order1 Присылать сообщения на E-mail      
+                      span.history__order2 Вы будете получать e-mail сообщения о проводимых акциях, промо-купонах и еще чем нибудь
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(type="checkbox")
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order1 Присылать сообщения на E-mail      
+                      span.history__order2 Вы будете получать e-mail сообщения о проводимых акциях, промо-купонах и еще чем нибудь
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(type="checkbox")
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order1 Присылать сообщения на E-mail      
+                      span.history__order2 Вы будете получать e-mail сообщения о проводимых акциях, промо-купонах и еще чем нибудь
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(type="checkbox")
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order1 Присылать сообщения на E-mail      
+                      span.history__order2 Вы будете получать e-mail сообщения о проводимых акциях, промо-купонах и еще чем нибудь
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(type="checkbox")
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order1 Присылать сообщения на E-mail      
+                      span.history__order2 Вы будете получать e-mail сообщения о проводимых акциях, промо-купонах и еще чем нибудь
+                  button.b-button.b-button_green.b-button_big.b-button_check Сохранить настройки
+        include footer.jade
+    include scripts.jade

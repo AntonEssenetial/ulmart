@@ -1,0 +1,77 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-lk-wrapper
+          .b-lk__content
+            .lk__col1
+              .lk__title Личный кабинет
+              .lk__menu
+                a(href="lk.html").lk__link
+                  span.lk__item
+                  | Профиль
+                a(href="lk-2.html").lk__link.lk__link_active
+                  span.lk__item
+                  | Адреса
+                a(href="lk-3.html").lk__link
+                  span.lk__item
+                  | Скидочные купоны
+                a(href="lk-4.html").lk__link
+                  span.lk__item
+                  | История заказов
+                a(href="lk-5.html").lk__link
+                  span.lk__item
+                  | Избранное
+                a(href="lk-6.html").lk__link
+                  span.lk__item
+                  | Уведомления
+                a(href="lk-7.html").lk__link
+                  span.lk__item
+                  | Подписка
+            .lk__col2
+              .lk__avatar
+                .avator__col1.b-ib
+                  img.avator__img(src="images/avator.jpg", alt="")
+                .avator__col2.b-ib
+                  .avator__title 
+                    span Сергей 
+                    span Михалев
+                  a(href="").change__avator Изменить аватарку
+              .lk__add-address
+                form(action="")
+                  span.lk__form-descr.lk__m-left-none Основные настройки
+                  label.form__label 
+                    span.span__label Ваш e-mail
+                    input(type="text",placeholder='e-mail').form__input.form__input_middle
+                  label.form__label 
+                    span.span__label Ваш пароль
+                    input(type="text",placeholder='пароль').form__input.form__input_middle
+                    button.b-button.b-button_check.b-button_green.b-button_big.b-button_reset Изменить пароль
+                  span.lk__form-descr.lk__m-left-none Личная информация
+                  label.form__label 
+                    span.span__label Имя
+                    input(type="text",placeholder='имя').form__input.form__input_middle
+                  label.form__label 
+                    span.span__label Фамилия
+                    input(type="text",placeholder='фамилия').form__input.form__input_middle
+                  label.form__label 
+                    span.span__label Телефон
+                    input(type="text",placeholder='телефон').form__input.form__input_middle
+                  .lk__date-rapper
+                    label.form__label.form__label_ib 
+                      span.span__label Дата рождения
+                      input(type="text",placeholder='12').form__input.form__input_xs
+                    .b-ib.lk__profile
+                      .b-header-popup__filter.b-header-popup__filter_catalog.b-header-popup__filter_lk.b-ib
+                        .b-header-popup__filter-select.b-header-popup__filter-select_catalog.b-ib
+                          select.b-custom-select.js-custom-select2
+                            option(selected="selected" value="Май") Май
+                            option(value="Июнь") Июнь
+                            option(value="Июль") Июль
+                    input(type="text",placeholder='год').form__input.form__input_xs2
+                  button.b-button.b-button_check.b-button_green.b-button_big Сохранить адрес
+        include footer.jade
+    include scripts.jade
