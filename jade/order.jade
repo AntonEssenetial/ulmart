@@ -1,0 +1,68 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body.bg-img
+    #b-layout.bg-none
+      .b-wrapper
+        .order-wrapper
+          .order__50
+            .order1-wrapper
+              .order1__head
+                span.callback.b-ib Обратный звонок
+                a(href="tel:+74956498570").b-ib.callback__link +7 (495) 
+                  span 649-85-70
+              .order1__logo
+                a(href="").b-ib
+                  img(src="images/ash.png", alt="")
+                a(href="").b-ib.b-button.check__back Вернуться на главную
+              span.order1__title Получить бесплатную доставку
+              .order1__present
+                .present-wrapper
+                  .present__row
+                    span.p-1.b-ib
+                    span.present_span.b-ib Получите неограниченное число бесплатных доставок! Попробуйте нашу подписку
+                  button.b-button.b-button_green.b-button_check.b-button_big Оформить подписку
+              .order1__footer © Интернет-гипермаркет «Утконос». Все права защищены.
+          .order__50
+            .b-popup.b-popup-card.b-popup-order
+              .b-popup-check
+                .order__tabs
+                  a(href="order.html").step.active_step Шаг 1
+                  a(href="order2.html").step Шаг 2
+                  a(href="order3.html").step Шаг 3
+                .check__title.check__title_m Введите ваш адрес
+                .order1__radio
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(checked type="radio", name='adr')
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order2 Новый адрес
+                  label().filter__label.filter__label_radio
+                    input.filter__checkbox.filter__checkbox_radio(type="radio", name='adr')
+                    i
+                    .check__wrapper.b-ib
+                      span.history__order2 Домой
+                .order1__form
+                  form(action="")
+                    span.lk__form-descr Все поля обязательны для заполнения
+                    label.form__label 
+                      input(type="text",placeholder='Улица').form__input.form__input_middle
+                    .form__col1
+                      label.form__label 
+                        input(type="text",placeholder='Дом').form__input.form__input_short
+                      label.form__label 
+                        input(type="text",placeholder='Квартира').form__input.form__input_short
+                    .form__col1
+                      label.form__label 
+                        input(type="text",placeholder='Этаж').form__input.form__input_short
+                      label.form__label 
+                        input(type="text",placeholder='Индекс').form__input.form__input_short
+                    label.form__label 
+                      input(type="text",placeholder='Название').form__input.form__input_middle
+                      .lable__tooltip
+                        span.tooltip__content.animated.zoomIn Хитроумные механизмы и примитивное электричество, удивительная атмосфера стимпанка и квестов Myst, уникальные в Казани аудиовизуальные эффекты и оригинальный сюжет. ... kk-kazan@mail.ru.
+                    button.b-button.b-button_check.b-button_green.b-button_big.b-button_del.b-button_width Удалить адрес
+                    label.form__label 
+                      input(type="text",placeholder='Номер телефона').form__input.form__input_middle.form__input_tooltip
+                button.b-button.b-button_green.b-button_check.b-button_big.b-button_width  Дальше
+    include scripts.jade

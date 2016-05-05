@@ -132,6 +132,7 @@
   }
 
 // Height detect funciton
+
   function heightDetect(){
     $('.lk__col1').css( 
       'height', $('.b-lk__content').height()

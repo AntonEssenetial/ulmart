@@ -1,0 +1,66 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-podpiska
+          .podpiska__head
+            .podpiska__title
+              span.p_title Оформите подписку Ultshops и не платите за доставку!
+              .podpisk__form
+                form(action="")
+                  label.form__label
+                    .lable__tooltip.lable__tooltip_left
+                      span.tooltip__content.animated.zoomIn Хитроумные механизмы и примитивное электричество, удивительная атмосфера стимпанка и квестов Myst, уникальные в Казани аудиовизуальные эффекты и оригинальный сюжет. ... kk-kazan@mail.ru. 
+                    .b-ib.lk__profile
+                      .b-header-popup__filter.b-header-popup__filter_catalog.b-header-popup__filter_lk.w_200.b-ib
+                        .b-header-popup__filter-select.b-header-popup__filter-select_catalog.b-ib
+                          select.b-custom-select.js-custom-select2
+                            option(selected="selected" value="2 недели бесплатно") 2 недели бесплатно
+                            option(value="3 недели бесплатно") 3 недели бесплатно
+                            option(value="22 недели бесплатно") 22 недели бесплатно
+                  button.b-button.b-button_green.b-button_check.b-button_big Оформить подписку
+          .podpiska__row-wrapper
+            .podpiska__row
+              .pod__left.b-ib
+                .pod-wrap
+                  span.pod1
+              .pod__right.b-ib
+                .pod__text-wrap
+                  span.pod__title Бесплатная доставка
+                  p.pod__text Баноффи — английский десерт Однажды меня угостили десертом, который невозможно было раскусить. Назывался он баноффи, и я сразу понял, что не люблю его, кто будет рад грызть не...
+          .podpiska__row-wrapper
+            .podpiska__row
+              .pod__left.b-ib
+                .pod__text-wrap
+                  span.pod__title Заказывайте с друзьями
+                  p.pod__text Баноффи — английский десерт Однажды меня угостили десертом, который невозможно было раскусить. Назывался он баноффи, и я сразу понял, что не люблю его, кто будет рад грызть не...
+              .pod__right.b-ib
+                .pod-wrap
+                  span.pod2
+          .podpiska__row-wrapper
+            .podpiska__row
+              .pod__left.b-ib
+                .pod-wrap
+                  span.pod3
+              .pod__right.b-ib
+                span.pod__title Бесплатная доставка
+                p.pod__text Баноффи — английский десерт Однажды меня угостили десертом, который невозможно было раскусить. Назывался он баноффи, и я сразу понял, что не люблю его, кто будет рад грызть не...
+                .form-wrappper
+                  form(action="")
+                    .select-wrap.b-ib
+                      label.form__label
+                        .lable__tooltip.lable__tooltip_left
+                          span.tooltip__content.animated.zoomIn Хитроумные механизмы и примитивное электричество, удивительная атмосфера стимпанка и квестов Myst, уникальные в Казани аудиовизуальные эффекты и оригинальный сюжет. ... kk-kazan@mail.ru. 
+                        .b-ib.lk__profile
+                          .b-header-popup__filter.b-header-popup__filter_catalog.b-header-popup__filter_lk.w_200.b-ib
+                            .b-header-popup__filter-select.b-header-popup__filter-select_catalog.b-ib
+                              select.b-custom-select.js-custom-select2
+                                option(selected="selected" value="2 недели бесплатно") 2 недели бесплатно
+                                option(value="3 недели бесплатно") 3 недели бесплатно
+                                option(value="22 недели бесплатно") 22 недели бесплатно
+                    button.b-button.b-button_green.b-button_check.b-button_big Оформить подписку
+        include footer.jade
+    include scripts.jade
