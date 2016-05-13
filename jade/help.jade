@@ -1,0 +1,332 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        header.b-header
+          .b-header__top.b-ib-wrapper
+            .b-header__logo.b-ib.b-header__logo_17
+              a(href="")
+                img(src="images/logo.png" alt="")
+            .b-header-search.b-ib.b-header-search_37
+              form(action="")
+                .b-header-search__left.b-ib
+                .b-header-search__center.b-ib
+                  input.b-header-search__input.accepted__input(type="text" placeholder="Чем мы можем вам помочь?" value="")
+                .b-header-search__right.b-ib
+                  button.b-button.b-button_green Найти
+            .b-header-user.b-ib.b-header-user_46
+              .b-header_ph.b-ib
+                span.h-phone +7 (846) 124-65-12
+              .b-header_bot.b-ib.b-nav__item_subitems
+                .b-nav__link Другое
+                  .b-help
+                    .ph-me
+                      span Перезвоните мне
+                      a(href="") Задать вопрос
+                    .order1__form
+                      form(action="")
+                        .b-ib.lk__profile
+                          span.span_help Город
+                          .b-header-popup__filter.b-header-popup__filter_catalog.b-header-popup__filter_lk.b-header-popup__filter_lk_280.b-ib
+                            .b-header-popup__filter-select.b-header-popup__filter-select_catalog.b-ib
+                              select.b-custom-select.js-custom-select2
+                                option(selected="selected" value="Самара") Самара
+                                option(value="Деревня кабачки") Деревня кабачки
+                                option(value="Черпеповец") Черпеповец
+                        label.form__label 
+                          input(type="text",placeholder='Ваш номер').form__input.form__input_middle.form__input_help
+                          span.span_help Телефон
+                        label.form__label 
+                          input(type="text",placeholder='Введите имя').form__input.form__input_middle.form__input_help
+                          span.span_help Имя
+                        .help-wrapper
+                          .help__left.b-ib
+                            span Причина
+                          .help__right.b-ib
+                            .order1__radio
+                              label().filter__label.filter__label_radio.filter__label_radio-yellow
+                                input.filter__checkbox.filter__checkbox_radio(checked type="radio", name='adr')
+                                i
+                                .check__wrapper.b-ib
+                                  span.history__order2 Хочу сделать заказ
+                              label().filter__label.filter__label_radio.filter__label_radio-yellow
+                                input.filter__checkbox.filter__checkbox_radio(checked type="radio", name='adr')
+                                i
+                                .check__wrapper.b-ib
+                                  span.history__order2 Не пришел заказ
+                              label().filter__label.filter__label_radio.filter__label_radio-yellow
+                                input.filter__checkbox.filter__checkbox_radio(type="radio", name='adr')
+                                i
+                                .check__wrapper.b-ib
+                                  span.history__order2 Жалоба
+                      button.b-button.b-button_green.b-button_check.b-button_big.b-button_width  Отправить заявку
+                      span.help__small Оператор перезванивает в рабочее время в течение 2 часов
+              .b-header-user__avatar.b-ib
+                a(href="")
+                 img(src="images/demo/header-avatar.jpg")
+              .b-header-user__name.b-ib
+                | Здравствуйте, 
+                .cabinet__acc.b-ib
+                  a.b-header-user__name-link(href="") Сергей
+                  .cabinet__wrap
+                    ul.profile__menu
+                      li
+                        a.profile__link(href="") Профиль
+                      li
+                        a.profile__link(href="") Подписка
+                      li
+                        a.profile__link(href="") Исстория заказов
+                      li
+                        a.profile__link(href="") Выход
+              .b-header-user__exit.b-ib
+                a.b-header-user__exit-btn(href="")
+        .b-help-wrapper
+          .b-mac.animated.fadeInRight
+          h2.help__h2.b-ib Помощь
+          button.b-button.check__back Вернуться к покупкам
+          .b-help-acord-wrapper
+            .b-help-acord
+              ul.acord-main
+                li.acord__item
+                  a(href="").acord__link Что такое ultShops? 
+                  ul.acord__sub.animated.fadeInUp
+                    li.acord__item-2 
+                      span.jsAcordTab  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quo nostrum consectetur soluta, hic nihil suscipit eaque error necessitatibus fugit deserunt nisi itaque, est, earum tempora laborum qui enim vitae?
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p amet, consectetur adipisicing elit. Quo eaque obcaecati odio iure distinctio libero eligendi facere. Amet fugit ipsa aliquam id expedita, ex, dolorem, exercitationem delectus consequatur labore quis.
+                          ul.acord__sub-3
+                            li Что то написанно
+                            li Что то написанно
+                            li Что то написанно
+                            li Что то написанно
+                            li Что то написанно
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum , consectetur adipisicing elit. Ipsum voluptatum praesentium quae dolorum, recusandae nisi ut, alias possimus beatae accusantium animi dolorem magni sit ipsam odio blanditiis commodi mollitia saepe!
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellat neque modi sapiente suscipit, voluptatum ratione? Ducimus, nihil consequatur accusantium blanditiis mollitia dicta, ab aliquam quo pariatur officiis laborum praesentium.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi laboriosam officia illo ipsa optio beatae maxime, blanditiis quisquam quod ex doloribus quam tempore impedit aperiam! Eaque quas minima numquam voluptatem.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, assumenda at dolor quaerat deleniti velit laboriosam fugit, aut, labore commodi illum molestias quam quod eligendi repudiandae error quas odio incidunt.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati enim deserunt cumque neque! A beatae sint saepe, excepturi ut debitis rerum non laborum. Earum exercitationem tempore reiciendis repellat, iste doloremque.
+                li.acord__item
+                  a(href="").acord__link Цены 
+                  ul.acord__sub.animated.fadeInUp
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat numquam quisquam enim, quasi asperiores, ex quae culpa molestiae exercitationem distinctio repudiandae eius, non sed accusantium. Recusandae provident natus dicta omnis!
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente delectus tempora sunt consectetur ea praesentium expedita, quia ipsa minima, tempore dolorem, iusto inventore accusamus velit? Voluptas tempore quod error debitis.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, reprehenderit nam quam quis voluptatum blanditiis eum maxime, eveniet illo alias excepturi consectetur voluptatibus explicabo expedita totam. Accusamus officia odit mollitia.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quos obcaecati ex dolores quae iusto similique, porro voluptate perspiciatis perferendis minus recusandae, harum et voluptates ut id neque! Vero, dignissimos.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos assumenda ipsum consequuntur doloribus ipsa ullam alias accusantium sed similique numquam, culpa quis ratione nulla, reiciendis iste, omnis recusandae illum voluptatibus!
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iste aspernatur architecto dolor veniam expedita quo ratione, laudantium dolores ipsum aliquid recusandae sequi numquam deserunt, quibusdam quidem aliquam? Maxime, est!
+                li.acord__item
+                  a(href="").acord__link Настройка аккаунта 
+                  ul.acord__sub.animated.fadeInUp
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius amet perspiciatis praesentium dolore, et eligendi rem provident? Illo odio iusto quaerat, culpa ab, modi, veniam iure ea dignissimos voluptatem deserunt.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero expedita tenetur a. Aut obcaecati id, ipsum hic ullam excepturi. Error tempora ab ipsa. Deleniti, maiores neque recusandae sint aperiam quaerat.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, in, eveniet! Reprehenderit quibusdam nemo doloremque, explicabo cum itaque similique nobis aut dicta fugit blanditiis laudantium rem excepturi consectetur fuga, dolores?
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum doloremque rerum possimus aliquid! In, ex sapiente vero reprehenderit natus odio harum odit assumenda, earum eos eveniet et accusantium rem temporibus!
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ducimus ut possimus quis vero dolore, in maiores, ipsum quo odio dolores laborum necessitatibus nesciunt cupiditate quibusdam quod veritatis aliquam incidunt.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore modi dolore, vero error provident, eius, in sint quo pariatur minus iusto sunt repellat laborum alias maxime. Dolores nobis, commodi eos.
+                li.acord__item
+                  a(href="").acord__link Покупки и оплата 
+                  ul.acord__sub.animated.fadeInUp
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit obcaecati repellendus ipsam sequi sed sunt dolore, autem veritatis repudiandae perspiciatis. Accusamus totam veritatis nesciunt voluptatum voluptates velit rem facere itaque.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur neque nisi modi amet placeat quo deleniti deserunt, labore itaque. Eaque quis officia neque voluptatum quia sed, harum cumque aliquid suscipit.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate accusantium distinctio error at, harum provident architecto quis natus fugit labore. Excepturi officia possimus eos quisquam aliquid fugiat veritatis, facilis odio.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis necessitatibus doloremque qui, repudiandae dolore alias tempora laudantium quisquam. Mollitia quas hic quam qui molestiae ipsam expedita nemo vel necessitatibus commodi.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, natus quisquam error quidem ullam ipsam explicabo fuga rem nemo voluptatum officiis quae nulla, expedita aliquam dolore assumenda deserunt officia! Sequi.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis et, fuga repellendus alias quo! Odit sunt, excepturi illo optio. Blanditiis, quo neque molestiae aspernatur et ipsa numquam asperiores facilis iusto.
+                li.acord__item
+                  a(href="").acord__link Изменение заказа 
+                  ul.acord__sub.animated.fadeInUp
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatibus quibusdam at ducimus esse minus velit eum laudantium culpa incidunt inventore, obcaecati deleniti, atque itaque dignissimos vitae dicta. Iste, illum.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius incidunt minus vel alias accusamus doloremque maxime placeat consectetur rem, earum dolor. Quo eveniet commodi quos recusandae, alias illum a nam.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus porro ea eaque a consectetur, suscipit quaerat dignissimos officia iusto debitis omnis fugiat? Eaque sapiente officiis quod voluptatem, dignissimos quisquam, sequi.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptas repudiandae sapiente ea temporibus autem! Eveniet porro praesentium iusto eos quaerat culpa dolore inventore corrupti assumenda id! Et, architecto, eveniet.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore expedita obcaecati illum sequi saepe dolorum molestias facilis. Quam reiciendis, est officia! Vitae libero similique rerum facere cupiditate, assumenda nesciunt commodi.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui commodi perferendis quam architecto, fugit dignissimos! Voluptatibus eos rem, delectus nostrum quis accusamus minima sunt non iure aut inventore tempore doloribus!
+                li.acord__item
+                  a(href="").acord__link Подписка 
+                  ul.acord__sub.animated.fadeInUp
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eum quod, praesentium, fuga, ipsum modi corporis similique voluptate natus esse, distinctio porro mollitia atque nobis doloremque placeat harum aperiam id!
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae odio ullam eveniet dolore molestiae veniam aspernatur ipsa sit, deserunt praesentium tempore, fugit excepturi fuga recusandae eligendi dolor repudiandae et minima!
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum asperiores consequuntur ipsum placeat atque earum, ex nulla molestiae accusamus blanditiis, adipisci tempore eius temporibus provident! In totam iusto, quas aliquid.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo natus vitae consequuntur minima, voluptatibus assumenda eveniet excepturi at error delectus quis expedita labore molestiae perspiciatis, quod, fuga quia libero nulla.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam saepe ab quas at rerum suscipit fuga voluptatum doloremque eius maxime non ducimus eos sapiente, sequi hic, aliquam quod consequuntur ad.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sunt neque, accusantium nulla debitis doloribus illo vitae nesciunt dolor aut fugit odit, reiciendis! Nulla odio vel libero, eligendi quas ad!
+                li.acord__item
+                  a(href="").acord__link Контакты 
+                  ul.acord__sub.animated.fadeInUp
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem commodi ex non fuga quos voluptas error eaque cupiditate nesciunt unde aliquam repudiandae cum, dignissimos, quisquam reiciendis. Libero blanditiis labore, reprehenderit.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic rerum laudantium sequi modi, animi in praesentium quia beatae aliquid architecto aspernatur explicabo aliquam veritatis voluptas cum debitis iste, consequatur eum.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ipsam odit, illo, illum, similique magnam laudantium eum libero quas voluptates architecto aspernatur maiores. Assumenda recusandae culpa temporibus beatae, tenetur inventore!
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sapiente perferendis deleniti vel reprehenderit pariatur repellendus quaerat dignissimos suscipit illum temporibus explicabo veritatis nulla nesciunt minima, iure praesentium natus mollitia?
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut molestiae nostrum reiciendis excepturi officia rerum iste, mollitia voluptatum. Aliquid impedit accusamus reiciendis, suscipit dolorum, eveniet cumque sequi eaque exercitationem sint.
+                    li.acord__item-2 
+                      span.jsAcordTab Какойто пункт
+                      ul.acord__sub-2.animated.fadeInUp
+                        li.acord__item-3 
+                          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis error natus maxime assumenda sint, est modi quasi at totam maiores et, numquam alias animi quos illo a! Delectus, totam, recusandae!
+            span.more-quest У вас еще остались вопросы? 
+              a(href="") Напишите нам!
+        include footer.jade
+    include scripts.jade

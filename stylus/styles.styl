@@ -5,7 +5,7 @@
 @import 'animate.css';
 
 ////////////////////////////////////////// MAIN STYLES
-html, body {height: 100%}
+html, body {height: 100%;min-width: 1260px;}
 body {
     margin: 0;
     padding: 0;
@@ -1996,6 +1996,14 @@ input[type="radio"]
   height @width
   line-height @width 
   text-align center
+.filter__label_radio-yellow
+  display block !important
+  margin 0 0 5px 0 !important
+  span
+    font-size 14px !important
+.filter__label_radio-yellow > i
+  width 20px 
+  height @width
 .filter__label_radio > .filter__checkbox_radio:checked + i
   trs()
   &:after
@@ -2004,6 +2012,14 @@ input[type="radio"]
     background black
     border-radius (50%)
     margin 5px
+.filter__label_radio-yellow > .filter__checkbox_radio:checked + i
+  trs()
+  &:after
+    height 10px 
+    width @height 
+    background #fcd200
+    border-radius (50%)
+    margin 1px
 .filter__label_ok i
   width 25px 
   height @width
@@ -2072,7 +2088,7 @@ input[type="radio"]
 .products__cont
   margin 0 4px
 .js_resultActive
-  display block
+  display block !important
 // Ashan
 .b-product-preview_ashan
   width 196px
@@ -4597,10 +4613,10 @@ body .fav__checkbox
     padding-left 25px
     padding-right 25px
 .bg-img
-  background: url(../images/big-bg.jpg) no-repeat center
+  background: url(../images/big-bg.jpg) no-repeat center fixed
   background-size cover
 .bg-img2
-  background: url(../images/big-bg2.jpg) no-repeat center
+  background: url(../images/big-bg2.jpg) no-repeat center fixed
   background-size cover
 .bg-none
   background-color transparent !important
@@ -4913,3 +4929,266 @@ body .fav__checkbox
   padding-top 10px
   .form__label
     margin 0px
+.shops-m
+  .b-header-popup__wrapper
+    width 900px
+  .b-header-popup__right
+    width 99%
+  .b-header-popup
+    left -71px
+.h-phone
+  font-size 15px
+  vertical-align: middle
+  margin-right 40px
+  &:before 
+    content ''
+    sprite($sprite-hm)
+    display inline-block
+    vertical-align: middle
+    margin-right 5px
+.b-header-user_46
+  width 44%
+.b-header__logo_17
+  width 17%
+.b-header-search_37
+  width 39%
+  .b-header-search__left
+    width 7%
+  .b-header-search__center
+    width 78%
+  .accepted__input
+    background: white
+  .b-header-search__left:after
+    left 13px
+.b-header_bot
+  .b-nav__link
+    position relative
+    margin-right 40px
+    font-size 15px
+    &:hover .b-help
+      trs()
+      opacity 1
+      visibility visible
+.b-help
+  opacity 0
+  visibility hidden
+  trs()
+  width 335px 
+  box-shadow 0 0 33px rgba(0, 0, 0, 0.29);
+  padding 30px
+  text-align left
+  position absolute
+  background: white
+  left -15px
+  top 8px
+  z-index 11
+  margin-top 30px
+  .lk__profile
+    position relative
+  .item 
+    padding-left: 81px;
+    font-size: 15px;
+  &:after 
+    content ''
+    position absolute
+    display block
+    border-bottom 15px solid white
+    border-left 15px solid transparent
+    border-right 15px solid transparent
+    top -15px
+  .b-button_width
+    width 100%
+    display block
+    margin 10px 0 20px 0
+.help__right
+  margin 10px 20px 10px 0px
+  .order1__radio
+    text-align left
+.help__left
+  margin 10px 0 10px 25px
+  vertical-align: top
+  span 
+    color #898989
+    font-size 14px 
+    margin-right 15px
+.help__small
+  font-size 12px
+  text-align left
+  margin 0 0 0 40px
+  display: block
+  width 200px
+.ph-me 
+  span 
+    background: #fcd100
+    font-size 13px
+    height 45px
+    line-height @height
+    display inline-block
+    border-radius (30px)
+    padding 0 20px
+    margin-bottom 15px
+  a 
+    font-size 13px
+    margin-left 20px
+    text-decoration: none 
+    border-bottom 1px dotted black
+.form__input_help
+  padding-left 100px
+  font-size 15px
+  color black
+.span_help 
+  position absolute
+  top 15px
+  left 25px
+  color #909090;
+  z-index 2
+.b-mac
+  background url(../images/mac.png) no-repeat center
+  position absolute
+  width 568px 
+  height 697px
+  right 0px 
+  top 0px
+.b-help-wrapper
+  overflow hidden
+  position relative
+  margin-top 24px
+  width 100%
+  padding 30px 40px 140px 40px
+  background-image linear-gradient(to right,  #fabc00 30%,#fbc902 50%,#fcd000 65%,#FFC800 100%);
+  .check__back
+    position relative 
+    top 3px
+.jsBgNone
+  display none
+.acord-main
+  padding-left 83px
+.acord__item 
+  list-style-type: decimal;
+  color rgba(0, 0, 0, 0.2);
+  font-size 24px
+  position relative
+  margin 40px 0
+.help__h2
+  font-size 36px
+  margin-right 50px
+  font-family fontHelveticaThin
+.acord__link 
+  font-size 24px
+  text-decoration: none
+  font-family fontHelveticaThin
+.acord__item
+  &:first-child:before 
+    sprite($sprite-h1)
+    content ''
+    position absolute
+    display inline-block
+    vertical-align: middle
+    left -82px
+    top -8px
+  &:nth-child(2):before 
+    sprite($sprite-h2)
+    content ''
+    position absolute
+    display inline-block
+    vertical-align: middle
+    left -82px
+    top -8px
+  &:nth-child(3):before 
+    sprite($sprite-h3)
+    content ''
+    position absolute
+    display inline-block
+    vertical-align: middle
+    left -82px
+    top -8px
+  &:nth-child(4):before 
+    sprite($sprite-h4)
+    content ''
+    position absolute
+    display inline-block
+    vertical-align: middle
+    left -82px
+    top -8px
+  &:nth-child(5):before 
+    sprite($sprite-h5)
+    content ''
+    position absolute
+    display inline-block
+    vertical-align: middle
+    left -82px
+    top -8px
+  &:nth-child(6):before 
+    sprite($sprite-h6)
+    content ''
+    position absolute
+    display inline-block
+    vertical-align: middle
+    left -82px
+    top -8px
+  &:last-child:before 
+    sprite($sprite-h7)
+    content ''
+    position absolute
+    display inline-block
+    vertical-align: middle
+    left -82px
+    top -8px
+.more-quest
+  font-size 15px 
+  margin-left 87px
+.acord__sub
+  display none !important
+  background: white
+  border-radius 20px
+  padding 20px 30px
+  position relative 
+  left -30px
+  margin-top 20px
+  width 350px
+  &:after 
+    content ''
+    display block 
+    position absolute
+    border-bottom 15px solid white 
+    border-left 0px solid transparent 
+    border-right 15px solid transparent 
+    top -15px 
+    left 50px
+.acord__item-2
+  font-size 14px 
+  color #0BA8AB;
+  margin 7px 0
+  cursor pointer
+.acord__sub-2
+  display none
+  position: absolute;
+  left: 390px;
+  width: 700px;
+  top -55px
+  background: white
+  border-radius 20px
+  padding 20px 30px
+  cursor default 
+  color black
+.jsAcordTab
+  border-left 2px solid transparent
+  display block
+.jsAcordActive
+  border-left 2px solid #0BA8AB;
+  padding-left 4px
+.acord__item-2.jsAcordActive
+  .acord__sub-2
+    display block !important
+.acord__sub-3
+  display block !important
+  li 
+    list-style-type: decimal
+    font-size 14px
+    margin 2px 0
+.acord__item.open
+  .acord__sub 
+    display block !important
+.acord__link 
+  color black
+  cursor pointer
