@@ -1,0 +1,253 @@
+doctype
+html(lang='ru')
+  include head.jade
+  body
+    #b-layout
+      .b-wrapper
+        include header.jade
+        .b-popup-wrapper
+          .b-popup.b-popup-card.b-popu-card_add-card
+            .b-popup-recovery
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .icon-f
+                    .recovery__title Добавить карту
+              .accepted__content
+                .lk__add-address
+                  form(action="")
+                    span.lk__form-descr Все поля обязательны для заполнения
+                    label.form__label 
+                      span.span__label Номер карты
+                      input(type="text",placeholder='Номер').form__input.form__input_middle
+                    .form__col1
+                      label.form__label 
+                        span.span__label Срок действия
+                        input(type="text",placeholder='Срок').form__input.form__input_short
+                      label.form__label 
+                        span.span__label CVC
+                        input(type="text",placeholder='CVC').form__input.form__input_short
+                    .form__col1
+                      label.form__label 
+                        span.span__label.span__label_short Год
+                        input(type="text",placeholder='Год').form__input.form__input_short
+                      label.form__label 
+                        span.span__label.span__label_short Индекс
+                        input(type="text",placeholder='Индекс').form__input.form__input_short
+                    label.form__label 
+                      span.span__label Название
+                      input(type="text",placeholder='Название').form__input.form__input_middle
+                      .lable__tooltip
+                        span.tooltip__content.animated.zoomIn Хитроумные механизмы и примитивное электричество, удивительная атмосфера стимпанка и квестов Myst, уникальные в Казани аудиовизуальные эффекты и оригинальный сюжет. ... kk-kazan@mail.ru.
+                    button.b-button.b-button_check.b-button_green.b-button_big Сохранить карту
+          .b-popup.b-popup-card.b-popu-card_add-card
+            .b-popup-recovery
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .icon-g
+                    .recovery__title Изменить адрес
+              .accepted__content
+                .lk__add-address
+                  form(action="")
+                    span.lk__form-descr Все поля обязательны для заполнения
+                    label.form__label 
+                      span.span__label Улица
+                      input(type="text",placeholder='Улица').form__input.form__input_middle
+                    .form__col1
+                      label.form__label 
+                        span.span__label Дом
+                        input(type="text",placeholder='Дом').form__input.form__input_short
+                      label.form__label 
+                        span.span__label Квартира
+                        input(type="text",placeholder='Квартира').form__input.form__input_short
+                    .form__col1
+                      label.form__label 
+                        span.span__label.span__label_short Этаж
+                        input(type="text",placeholder='Этаж').form__input.form__input_short
+                      label.form__label 
+                        span.span__label.span__label_short Индекс
+                        input(type="text",placeholder='Индекс').form__input.form__input_short
+                    label.form__label 
+                      span.span__label Название
+                      input(type="text",placeholder='Домой').form__input.form__input_middle
+                      .lable__tooltip
+                        span.tooltip__content.animated.zoomIn Хитроумные механизмы и примитивное электричество, удивительная атмосфера стимпанка и квестов Myst, уникальные в Казани аудиовизуальные эффекты и оригинальный сюжет. ... kk-kazan@mail.ru.
+                    button.b-button.b-button_check.b-button_green.b-button_big Сохранить адрес
+          .b-popup.b-popup-card.b-popu-card_add-rec
+            .b-popup-recovery
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .icon-h
+                    .recovery__title Изменить пароль
+              .accepted__content
+                .lk__add-address
+                  form(action="")
+                    label.form__label 
+                      span.span__label Ваш пароль
+                      input(type="text",placeholder='Ваш пароль').form__input.form__input_middle
+                    label.form__label 
+                      span.span__label Повторите пароль
+                      input(type="text",placeholder='Повторите пароль').form__input.form__input_middle
+                    label.form__label 
+                      span.span__label Старый пароль
+                      input(type="text",placeholder='Старый пароль').form__input.form__input_middle
+                    button.b-button.b-button_check.b-button_green.b-button_big Сохранить изменения
+          .b-popup.b-popup-card.b-popu-card_intervals.b-popu-card_ingr
+            .b-popup-intervas
+              button.b-button.b-button__close-popup
+              .b-popup-cart__head
+                .b-products-block-top.b-ib.bg_reverse
+                  .cart__img-wrapper
+                    .cart__prod-title
+                      .search__title Ингредиенты для рецепта
+              .intervals__content
+                .ingrid__row
+                  .ingrid__slide
+                    .b-products-slider
+                      .b-products-slider__slider.js-products-slider-m-1
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-2.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                  .ingrid__slide
+                    .b-products-slider
+                      .b-products-slider__slider.js-products-slider-m-2
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-2.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                  .ingrid__slide
+                    .b-products-slider
+                      .b-products-slider__slider.js-products-slider-m-3
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-2.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                  .ingrid__slide
+                    .b-products-slider
+                      .b-products-slider__slider.js-products-slider-m-4
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-1.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                        .b-products-slider__item.js-products-slider-item
+                          .b-product-preview.b-ib-wrapper.b-product-preview_ashan
+                            .b-product-preview__pic.b-ib
+                              a(href="")
+                                img(src="images/demo/product-preview-2.jpg" alt="")
+                            .b-product-preview__name.b-ib
+                              a(href="")
+                                | Молоко кокосовое
+                                | Suzi-Wan 200мл
+                            .b-product-preview__price.b-ib
+                              | 258 <span class="b-rouble">&#8381;</span>
+                            .b-product-preview__buy.b-ib
+                              form(action="")
+                                .b-product-preview__incart.b-ib
+                                  button(type="submit").b-button.b-button_green В корзину
+                .ingrid__row.ingrid__row_border
+                  .ingrid__top
+                    span.ing__span Стоимость товаров для рецепта
+                    .b-product-preview__price.b-ib.b-popup_price
+                      | 258 <span class="b-rouble">&#8381;</span>
+                      button(type="submit").b-button.b-button_green.b-button_popup В корзину
+                  .ingrid__bottom
+                    p.in__text Состав: сушеные помидоры, соль, подсолнечное масло, каперсы, прованские травы, винный уксус, подкислитель: лимонная кислота (Е334).Хранить в сухом прохладном месте вдали от источников тепла. Температура хранения не выше +30'C. Открытую упаковку хранить в холодильнике не более 5 дней.Срок годности 24 месяца.
+    include scripts.jade

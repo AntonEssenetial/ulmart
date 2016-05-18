@@ -176,8 +176,16 @@ header.b-header
       .b-header-location.b-ib
         .b-header-location__current.b-ib
           | Москва 10069
-        button.b-button.b-header-location__change 
-          |  Сменить адрес 
+        button(data-toggle-element='#location', data-toggle-class='open').b-button.b-header-location__change.js-toggle-class
+          |  Сменить адрес
+        .location-wrapper#location.animated.fadeIn
+          span.accepted__desc Введите ваш адрес или индекс
+          .form__wrapper
+            form(action="")
+              .b-header-search__center.b-ib
+                input.b-header-search__input.accepted__input(type="text" placeholder="Например, кабачки" value="")
+              .b-header-search__right.b-ib
+                button.b-button.b-button_green Найти 
       .b-header-cart.b-ib
         | В корзине 
         a(href="") 6 товаров, 1 560 руб

@@ -147,6 +147,18 @@
   if (productSlider.length) {
       productSlider.slick(productSliderOptions);
   }
+  var productSlider = $('.js-products-slider-m-1, .js-products-slider-m-2, .js-products-slider-m-3, .js-products-slider-m-4'),
+      productSliderOptions = {
+          dots: false,
+          arrows: true,
+          slide: '.js-products-slider-item',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplaySpeed: 5000
+      };
+  if (productSlider.length) {
+      productSlider.slick(productSliderOptions);
+  }
 
 // Height detect funciton
 
